@@ -1,8 +1,9 @@
 # ![](https://wxbasic.sourceforge.net/favicon.ico) wxBasic
 
-**wxBasic** is a _Basic Interpreter_ that brings the easy to learn programming language Basic together with the power of the widely-used **wxWidget library**.
+**wxBasic** is an implementation of a _BASIC programming language_ together with the power of the widely-used **wxWidget** library.
+It was created in 2002 by [David Cuny](http://webs.lanset.com/dcuny/about.htm) and is currently maintained by Ralf Peters and Dirk Noack.
 
-Following the cross-plattform idea of wxWidgets, wxBasic is available on Windows, MacOSX and Linux/Ubuntu.
+Following the cross-plattform idea of wxWidgets, **wxBasic** is available on Windows, MacOSX and Linux/Ubuntu.
 
 ### Generations
 * First: (versions **0.x**) Downloads from [SourceForge Platform](https://wxbasic.sourceforge.net/get_it.php)
