@@ -1,4 +1,4 @@
-# wxBasic
+# ![](https://wxbasic.sourceforge.net/favicon.ico) wxBasic
 
 **wxBasic** is a _Basic Interpreter_ that brings the easy to learn programming language Basic together with the power of the widely-used **wxWidget library**.
 
