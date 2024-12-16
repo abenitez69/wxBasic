@@ -16,10 +16,9 @@ Arguments
 * `"n"`  is a string with the number in any other base;
 * `base` is an integer with the base to be exchanged. This is an optional parameter,
          default is 16 (hexadecimal numbering). It can be any number less than or equal 
-         to 85 and the digits according to the encoding proposed in RFC 1924:
-
+         to 85. If it is less than or equal to 36 (from 0 to Z), it is not case sensitive 
+		 (letters can be uppercase or lowercase).  
+		 The string with the non-decimal digits according to the encoding proposed in 
+		 [RFC 1924](https://www.rfc-editor.org/rfc/rfc1924):
 
 `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_´{|}~`
-
-> If `base` is less than or equal to 36 (from 0 to Z), is case insensitive (the letters can be 
-either uppercase or lowercase). 
