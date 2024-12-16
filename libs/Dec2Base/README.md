@@ -17,7 +17,7 @@ Constants
 
 **base** can also be a predefined constant:
 
- * `BASE36`     : Case insensitive [ 0<span style="color:red">..</span>9A..Z ]
+ * `BASE36`     : Case insensitive [ 0..9A..Z ]
  * `BASE85`     : Full table RFC 1924 [ 0..9A..Za..z!#$%&()*+-;<=>?@^_&#xB4;{|}~ ]
  * `BASE32I`    : Inverted Base32 [ 0123456789ACDEFHIJKMNPQRSTUVWXYZ ]
  * `BASE32`     : Original Base32 [ ABCDEFGHIJKLMNOPQRSTUVWXYZ234567 ]
