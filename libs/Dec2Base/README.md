@@ -9,8 +9,8 @@ number less than or equal to 85 and the digits according to the encoding propose
 
 `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_&#xB4;{|}~`
 
-If the base is less than or equal to 36 (from 0 to Z), the letters can be either uppercase or
-lowercase. 
+If the base is less than or equal to 36 (from 0 to Z), is case insensitive (the letters can be 
+either uppercase or lowercase). 
 
 Constants
 ---------
