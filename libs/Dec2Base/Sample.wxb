@@ -11,7 +11,7 @@ Print wxBaseToDec( "1999", 10 )
 Print
 Print "Base hexadecimal (por omisión):"
 Print wxDecToBase( 255 )
-Print wxBaseToDec( "FF" )
+Print wxBaseToDec( "fF" )
 Print
 Print "Base octal:"
 Print wxDecToBase( 477, 8 )
@@ -24,7 +24,3 @@ Print
 Print "Base85 (máxima posible):"
 Print wxDecToBase( 51998524, 85 )
 Print wxBaseToDec( "~v2S", 85 )
-Print
-Print "Base32 (evita confundir 0-O, 1-l, 8-B y 9-g):"
-Print wxDecToBase( 32767, BASE32I )
-Print wxBaseToDec( "ZzZ", BASE32I )
