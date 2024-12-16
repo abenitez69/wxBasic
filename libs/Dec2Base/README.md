@@ -1,27 +1,25 @@
-Exchange Between Numbering Systems
-==================================
+ENCODE AND DECODE TO ANY BASE
+=============================
 
- * `wxDecToBase(  n , base )`      Convert integer decimal number to any other base
- * `wxBaseToDec( "n", base )`      Converts number (as text) from any base to decimal.
+Exchange between any numbering systems.
+ 
+Fuctions
+--------
 
-**base** parameter is optional, if omitted it uses 16 (hexadecimal). The **base** can be any
-number less than or equal to 85 and the digits according to the encoding proposed in RFC 1924:
+* `wxDecToBase(  n , base )`      Converts an integer decimal to any other base.
+* `wxBaseToDec( "n", base )`      Converts a number (as string) from any base to decimal.
 
-`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_&#xB4;{|}~`
-
-If the base is less than or equal to 36 (from 0 to Z), is case insensitive (the letters can be 
-either uppercase or lowercase). 
-
-Constants
+Arguments
 ---------
 
-**base** can also be a predefined constant:
+* `n`    is a decimal integer number; 
+* `"n"`  is a string with the number in any other base;
+* `base` is an integer with the base to be exchanged. This is an optional parameter,
+         default is 16 (hexadecimal numbering). It can be any number less than or equal 
+         to 85 and the digits according to the encoding proposed in RFC 1924:
 
- * `BASE36`     : Case insensitive [ 0..9A..Z ]
- * `BASE85`     : Full table RFC 1924 [ 0..9A..Za..z!#$%&()*+-;<=>?@^_&#xB4;{|}~ ]
- * `BASE32I`    : Inverted Base32 [ 0123456789ACDEFHIJKMNPQRSTUVWXYZ ]
- * `BASE32`     : Original Base32 [ ABCDEFGHIJKLMNOPQRSTUVWXYZ234567 ]
- * `BASE64`     : MIME Base64 [ A..Za..z0..9+/ ]
- * `ASCII85`    : Ascii85 [ !\"#$%&'()*+,-./0..9:;<=>?@A..Z[\\]^_&#xB4;a..u
 
-**Note:** `BASE32` avoids the use of 0, 1, 8, 9 because they are easy to confuse with 'O', lowercase 'L', 'B' and lowercase 'G'. Inverted `BASE32I`, on the other hand, avoids the use of the letters O, l, B and g.
+`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_´{|}~`
+
+> If `base` is less than or equal to 36 (from 0 to Z), is case insensitive (the letters can be 
+either uppercase or lowercase). 
