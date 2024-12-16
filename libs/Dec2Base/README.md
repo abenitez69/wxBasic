@@ -23,3 +23,5 @@ Constants
  * `BASE32`     : Original Base32 [ ABCDEFGHIJKLMNOPQRSTUVWXYZ234567 ]
  * `BASE64`     : MIME Base64 [ A..Za..z0..9+/ ]
  * `ASCII85`    : Ascii85 [ !\"#$%&'()*+,-./0..9:;<=>?@A..Z[\\]^_&#xB4;a..u
+
+**Note:** `BASE32` avoids the use of 0, 1, 8, 9 because they are easy to confuse with 'O', lowercase 'L', 'B' and lowercase 'G'. Inverted `BASE32I`, on the other hand, avoids the use of the letters O, l, B and g.
