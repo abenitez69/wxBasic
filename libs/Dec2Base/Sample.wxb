@@ -1,26 +1,3 @@
-'
-'  wxDecToBase(  n , base )         Conviente número n decimal entero a otra base.
-'  wxBaseToDec( "n", base )         Convierte número (como texto) en cualquier base a decimal.
-'
-'                                   El parámetro base es opcional, si se omite utiliza 16 (hexadecimal). La
-'                                   base puede ser cualquier número menor o igual a 85 y los dígitos según la
-'                                   codificación propuesta en la RFC 1924:
-'                                   0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~
-'                                   Si la base es menor o igual a 36 (de 0 a Z), las letras pueden ser
-'                                   indistintamente en mayúsculas o minúsculas. La base tambien puede ser una
-'                                   constante predefinida:
-'                                      BASE36     : Ignora entre mayúsculas y minúsculas [ 0..9A..Z ]
-'                                      BASE85     : Tabla de RFC 1924 [ 0..9A..Za..z!#$%&()*+-;<=>?@^_`{|}~ ]
-'                                      BASE32I    : Base32 inverida [ 0123456789ACDEFHIJKMNPQRSTUVWXYZ ]
-'                                      BASE32     : Base32 original [ ABCDEFGHIJKLMNOPQRSTUVWXYZ234567 ]
-'                                      BASE64     : MIME Base64 [ A..Za..z0..9+/ ]
-'                                      ASCII85    : Ascii85 [ !\"#$%&'()*+,-./0..9:;<=>?@A..Z[\\]^_`a..u ]
-'                                   Nota: Base32 evita el uso de 0, 1, 8, 9 por ser fácil de confundir con
-'                                         'O', 'L' minúscula, 'B' y 'G'  minúscula. Base32 inverida, por el
-'                                         contrario, evita el uso de las letras O, l, B y g.
-
-
-
 Option Explicit
 
 ///////////   SAMPLE CODE   \\\\\\\\\\\\\\
@@ -32,7 +9,7 @@ Print "Base decimal:"
 Print wxDecToBase( 1999, 10 )
 Print wxBaseToDec( "1999", 10 )
 Print
-Print "Base hexadecimal (por omisión):"
+Print "Base hexadecimal (por omisiÃ³n):"
 Print wxDecToBase( 255 )
 Print wxBaseToDec( "FF" )
 Print
@@ -40,11 +17,11 @@ Print "Base octal:"
 Print wxDecToBase( 477, 8 )
 Print wxBaseToDec( "735", 8 )
 Print
-Print "Base36 (máxima para ignorar mayuscula/minuscula):"
+Print "Base36 (mÃ¡xima para ignorar mayuscula/minuscula):"
 Print wxDecToBase( 46655, 36 )
 Print wxBaseToDec( "ZzZ", 36 )
 Print
-Print "Base85 (máxima posible):"
+Print "Base85 (mÃ¡xima posible):"
 Print wxDecToBase( 51998524, 85 )
 Print wxBaseToDec( "~v2S", 85 )
 Print
