@@ -11,4 +11,5 @@ Following the cross-plattform idea of wxWidgets, **wxBasic** is available on Win
 * `Third: ` (versions **2.7.x** & **2.8.x**) Downloads from [wxBasic Site](https://www.wxbasic.net/downloads)
 * `Fourth:` (versions **3.x**) Downloads from [wxBasic Site](https://www.wxbasic.net/downloads)
 
-https://www.examples.wxbasic.de/
+* https://forum.wxbasic.de/
+* https://www.examples.wxbasic.de/
