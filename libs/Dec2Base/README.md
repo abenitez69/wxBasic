@@ -18,7 +18,8 @@ Arguments
          default is 16 (hexadecimal numbering). It can be any number less than or equal 
          to 85. If it is less than or equal to 36 (from 0 to Z), it is not case sensitive 
 		 (letters can be uppercase or lowercase).  
-		 The string with the non-decimal digits according to the encoding proposed in 
-		 [RFC 1924](https://www.rfc-editor.org/rfc/rfc1924):
+
+The string with the non-decimal digits according to the encoding proposed in 
+[RFC 1924](https://www.rfc-editor.org/rfc/rfc1924):
 
 `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_´{|}~`
