@@ -1,0 +1,27 @@
+///////////   SAMPLE CODE   \\\\\\\\\\\\\\
+
+Option Explicit
+Include "wxDecToBase.inc"
+
+
+Print "Decimal base:"
+Print wxDecToBase( 1999, 10 )
+Print wxBaseToDec( 1999, 10 )
+Print
+Print "Hexadecimal base (default base):"
+Print wxDecToBase( 255 )
+Print wxBaseToDec( "fF" )
+Print
+Print "Octal base:"
+Print wxDecToBase( 477, 8 )
+Print wxBaseToDec( 735, 8 )
+Print
+Print "Thirty-six base (top for not case sensitive):"
+Print wxDecToBase( 46655, 36 )
+Print wxBaseToDec( "ZzZ", 36 )
+Print
+Print "Eighty-five base (largest possible base):"
+Print wxDecToBase( 51998524, 85 )
+Print wxBaseToDec( "~v2S", 85 )
+
+
