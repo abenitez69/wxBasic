@@ -1,9 +1,7 @@
-Option Explicit
-
 ///////////   SAMPLE CODE   \\\\\\\\\\\\\\
 
+Option Explicit
 Include "wxDecToBase.inc"
-
 
 Print "Base decimal:"
 Print wxDecToBase( 1999, 10 )
