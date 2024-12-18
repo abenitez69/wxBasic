@@ -1,18 +1,25 @@
-ENCODE AND DECODE TO ANY BASE
-=============================
+*Dec2Base*: Converts From/To Any Base
+=====================================
 
-Exchange between any numbering systems.
+Transforms a numerical value from one number system to another.
+
+
+ Library description | 
+:--------------------|:----------------------------------------------------
+ Type:               |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other
+ Category:           |  Numeric and string
+ Version:            |  3.2
 
  
-Fuctions
---------
+Syntax
+------
 
-* `wxDecToBase(  n , base )`      Converts an integer decimal to any other base.
-* `wxBaseToDec( "n", base )`      Converts a number (as string) from any base to decimal.
+* `wxDecToBase(  n , base )    `    Returns a string in any numeric base from a number in decimal base.
+* `wxBaseToDec( "n", base )    `    Returns a decimal number from a string in any number base.
 
 
-Arguments
----------
+Remark
+------
 
 * `n`    is a decimal integer number; 
 * `"n"`  is a string with the number in any other base. If the base is less than or 
@@ -50,4 +57,3 @@ Print wxBaseToDec( "ZzZ", 36 )
 Print "Eighty-five base (largest possible base):"
 Print wxDecToBase( 51998524, 85 )
 Print wxBaseToDec( "~v2S", 85 )
-```
