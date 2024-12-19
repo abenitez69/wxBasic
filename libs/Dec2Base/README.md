@@ -10,7 +10,7 @@ Transforms a numerical value from one number system to another.
 | **Version:**         |  3.2                                                |
 | **Type:**            |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
 | **Category:**        |  Numeric and string                                 |
-| **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.8  &nbsp; &nbsp; &nbsp;  &#9745; 3.5  &nbsp; &nbsp; &nbsp;  &#9745; console  |
+| **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.08  &nbsp; &nbsp; &nbsp;  &#9745; 3.2  &nbsp; &nbsp; &nbsp;  &#9745; console  |
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9745; Linux  &nbsp; &nbsp; &nbsp;  &#9745; MacOS  |
 
 
