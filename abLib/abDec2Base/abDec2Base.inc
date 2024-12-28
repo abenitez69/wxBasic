@@ -1,8 +1,8 @@
 
 /////////////////    Encode and decode any integer to any base    \\\\\\\\\\\\\\\\\\\\
-/////////////////          wxDecToBase  and  wxBaseToDec          \\\\\\\\\\\\\\\\\\\\
+/////////////////          abDecToBase  and  abBaseToDec          \\\\\\\\\\\\\\\\\\\\
 
-Function wxDecToBase( N, B = 16 )
+Function abDecToBase( N, B = 16 )
     If B > 85 Then : Print "ERROR: The base cannot exceed 85" : Return : End If
     Const Digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~"
     Dim D = N, P = 0, R = "", I, J
@@ -15,7 +15,7 @@ Function wxDecToBase( N, B = 16 )
     Return R
 End Function
 
-Function wxBaseToDec( N, B = 16 )
+Function abBaseToDec( N, B = 16 )
     If B > 85 Then : Print "ERROR: The base cannot exceed 85" : Return : End If
     If (LCase( TypeOf( N )) = "integer" Or LCase( TypeOf( N )) = "number" ) And B <= 10 Then N = Str( N )
     Const Digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~"
