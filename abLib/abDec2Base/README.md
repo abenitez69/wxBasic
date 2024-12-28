@@ -6,7 +6,7 @@ Transforms a numerical value from one number system to another.
 
 | Library description  | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  **abDec2Base**                                     |
+| **Name:**            |  **abDec2Base.inc**                                     |
 | **Version:**         |  3.2                                                |
 | **Type:**            |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
 | **Category:**        |  Numeric and string                                 |
