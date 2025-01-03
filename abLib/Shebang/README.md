@@ -62,7 +62,7 @@ Remarks
   **NOTE 1:** To use this script with GUI versions of wxBasic, change the `bvmc.exe` to `wxbasic.exe`.  
   **NOTE 2:** As in Linux, you can also include the path to the executable; in this case change each 
   backslash to a double backslash in the path. For example: `"D:\\wxBasic\\wxbasic.exe" // %0 %1 %2 %3 %4 %5`
-* *Line 5:* It is used to jump to the end of the batch script and ignore the wxBasic code on the 
+* *Line 5:* Used to jump to the end of the batch script and ignore the wxBasic code on the 
   following lines. For **CMD** jump to label `NOW()` and for **wxBasic** assigns the current time 
   to the variable `goto`.
 * *Last line:* Used to label the last line of the script. For **CMD**, define label `:NOW()`. For **wxBasic** 
