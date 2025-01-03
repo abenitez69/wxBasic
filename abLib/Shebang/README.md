@@ -11,7 +11,7 @@ to binary the script.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  abShebang                                           |
+| **Name:**            |  abShebang                                          |
 | **Version:**         |  1.1                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  System                                 |
@@ -32,7 +32,7 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-```dosbatch{.line-numbers}
+```dosbatch =
 echo="" // & @echo off
 cls()
 rem ="" &
