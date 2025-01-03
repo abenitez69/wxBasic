@@ -32,7 +32,7 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-```dosbatch=
+```dosbatch =
 echo="" // & @echo off
 cls()
 rem ="" &
@@ -42,7 +42,7 @@ goto =now()
 // wxBasic script code
 
 :now()
-```dosbatch=
+```dosbatch =
 
 Remarks
 -------
