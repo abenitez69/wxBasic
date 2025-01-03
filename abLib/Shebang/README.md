@@ -70,8 +70,8 @@ Remarks
   the procedure `now()`
 
 
-Windows "Shebang" Example
--------------------------
+"Shebang" Example
+-----------------
 
 ```dosbatch
 echo="" // & @echo off
@@ -89,8 +89,7 @@ Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
 :now()
 ```
 
-Linux Shebang Example
----------------------
+### Linux/UNIX Shebang
 
 ```shell-script
 #!/usr/bin/wxbasic
