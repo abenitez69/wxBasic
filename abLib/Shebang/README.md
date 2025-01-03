@@ -32,7 +32,7 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-```dosbatch {.line-numbers}
+```dosbatch{.line-numbers}
 echo="" // & @echo off
 cls()
 rem ="" &
