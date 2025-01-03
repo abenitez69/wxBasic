@@ -32,7 +32,7 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-```batch
+```dosbatch
 echo="" // & @echo off
 cls()
 rem ="" &
@@ -73,7 +73,7 @@ Remarks
 Windows "Shebang" Example
 -------------------------
 
-```batch
+```dosbatch
 echo="" // & @echo off
 rem ="" &
 "C:\\Program Files\\wxBasic\\wxbasic.exe" //%0 %1 %2 %3
@@ -92,7 +92,7 @@ Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
 Linux Shebang Example
 ---------------------
 
-```batch
+```shell-script
 #!/usr/bin/wxbasic
 
 wxMessageBox( "Message box:\nMultiline sample", "wxMessageBox Sample", wxICON_INFORMATION )
