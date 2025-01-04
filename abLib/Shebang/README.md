@@ -32,7 +32,7 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-<sub>1</sub> `  echo="" // & @echo off                            `    
+<sub><sup>1</sup></sub> `  echo="" // & @echo off                            `    
 2 `  cls()                                             `   
 3 `  rem ="" &                                         `   
 4 `  "bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8           `   
