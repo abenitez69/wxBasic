@@ -44,14 +44,14 @@ goto =now()
 :now()
 ```
 
-1 `echo="" // & @echo off`   
-2 `cls()`
-2 `rem ="" &`
-2 `"bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8  `
-2 `goto =now()                              `
-2 `                                         `
-2 `// wxBasic script code                   `
-2 `                                         `
+1 `echo="" // & @echo off`    
+2 `cls()`   
+2 `rem ="" &`   
+2 `"bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8  `   
+2 `goto =now()                              `    
+2 `                                         `    
+2 `// wxBasic script code                   `    
+2 `                                         `    
 2 `:now()                                   `
 
 Remarks
