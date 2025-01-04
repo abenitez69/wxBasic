@@ -32,27 +32,15 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-```dosbatch
-echo="" // & @echo off
-cls()
-rem ="" &
-"bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8
-goto =now()
-
-// wxBasic script code
-
-:now()
-```
-
-1 `echo="" // & @echo off                       `    
-2 `cls()                                        `   
-3 `rem ="" &                                    `   
-4 `"bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8      `   
-5 `goto =now()                                  `    
-6 `                                             `    
-7 `// wxBasic script code                       `    
-8 `                                             `    
-9 `:now()                                       `
+1 `  echo="" // & @echo off                            `    
+2 `  cls()                                             `   
+3 `  rem ="" &                                         `   
+4 `  "bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8           `   
+5 `  goto =now()                                       `    
+6 `                                                    `    
+7 `  // wxBasic script code                            `    
+8 `                                                    `    
+9 `  :now()                                            `
 
 Remarks
 -------
