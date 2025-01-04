@@ -32,7 +32,6 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
-   `                                      `   
 <sub><sup>1</sup></sub>  `  echo="" // & @echo off                            `    
 <sub><sup>2</sup></sub>  `  cls()                                             `   
 <sub><sup>3</sup></sub>  `  rem ="" &                                         `   
@@ -42,6 +41,7 @@ Syntax
 <sub><sup>7</sup></sub>  `  // wxBasic script code                            `    
 <sub><sup>8</sup></sub>  `                                                  `    
 <sub><sup>9</sup></sub>  `  :now()                                            `
+
 
 Remarks
 -------
