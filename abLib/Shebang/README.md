@@ -32,15 +32,15 @@ also clear the screen, avoid echoing on the screen, jump to the end of the progr
 Syntax
 ------
 
- `                                      ` 
+   `                                      `   
 <sub><sup>1</sup></sub>  `  echo="" // & @echo off                            `    
 <sub><sup>2</sup></sub>  `  cls()                                             `   
 <sub><sup>3</sup></sub>  `  rem ="" &                                         `   
 <sub><sup>4</sup></sub>  `  "bvmc.exe" //%0 %1 %2 %3 %4 %5 %6 %7 %8           `   
 <sub><sup>5</sup></sub>  `  goto =now()                                       `    
-<sub><sup>6</sup></sub>  `                                                   `    
+<sub><sup>6</sup></sub>  `                                                  `    
 <sub><sup>7</sup></sub>  `  // wxBasic script code                            `    
-<sub><sup>8</sup></sub>  `                                                   `    
+<sub><sup>8</sup></sub>  `                                                  `    
 <sub><sup>9</sup></sub>  `  :now()                                            `
 
 Remarks
