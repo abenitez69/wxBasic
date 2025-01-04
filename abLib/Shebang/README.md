@@ -44,6 +44,9 @@ goto =now()
 :now()
 ```
 
+1 `echo="" // & @echo off`
+2 `cls()`
+
 Remarks
 -------
 
