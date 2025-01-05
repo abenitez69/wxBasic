@@ -53,12 +53,12 @@ Remarks
 * *Line 2:* It is used to clear the screen in both **CMD** and **wxBasic**. It is only implemented 
   in wxBasic versions 3.x and higher and in all console versions.   
   **NOTE:** To use this script with GUI versions of wxBasic 2.x, remove this line.
-* *Lines 3 and 4:* Used to run the same script with the wxBasic virtual machine. For **CMD**, first 
-  a comment is included (necessary to run in wxBasic) and on the next line wxBasic virtual machine 
+* *Lines 3 and 4:* Used to run the same script with the wxBasic virtual machine. For **CMD**, first
+  a comment is included (necessary to run in wxBasic) and on the next line wxBasic virtual machine
   is launched (in the example BVMC.EXE) followed by the name and path of the script (`%0`), finally
-  the batch arguments are passed. For **wxBasic**, first it is an empty assignment to the string 
-  variable `rem` followed by the concatenation operator and on the next line the assignment ends 
-  after concatenating the remaining text, followed by a comment.   
+  the batch arguments are passed. For **wxBasic**, first it is an empty assignment to the string
+  variable `rem` followed by the string concatenation operator and on the next line the assignment
+  ends after concatenating the remaining text, followed by a comment.   
   **NOTE 1:** To use this script with GUI versions of wxBasic, change the `bvmc.exe` to `wxbasic.exe`.  
   **NOTE 2:** As in Linux, you can also include the path to the executable; in this case change each 
   backslash to a double backslash in the path. For example: `"D:\\wxBasic\\wxbasic.exe" // %0 %1 %2 %3 %4 %5`
