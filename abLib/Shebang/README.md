@@ -48,7 +48,7 @@ Remarks
 -------
 
 * *Line 1:* Used to `ECHO OFF`. For **CMD**, two commands are concatenated on a single line using `&`. 
-  First an echo on screen that does not write anything, followed by the command ´@ECHO OFF´. For 
+  First an echo on screen that does not write anything, followed by the command `@ECHO OFF`. For 
   **wxBasic**, first it is an empty assignment to the string variable `echo` and then a comment.
 * *Line 2:* It is used to clear the screen in both **CMD** and **wxBasic**. It is only implemented 
   in wxBasic versions 3.x and higher and in all console versions.   
