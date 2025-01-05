@@ -1,8 +1,9 @@
 Shebang Emulator for Windows
 ============================
 
-A **shebang** is the character sequence `#!` . On Linux (and other Unix-like operating
-systems), when a script starts with a shebang, it is used as if it were an executable. 
+A **shebang** is the character sequence `#!` followed by the path and name of the interpreter or 
+virtual machine used to run the script. On Linux (and other Unix-like operating systems) the 
+shebang allows the script to be executed by the operating system as a binary program.
 In wxBasic for Windows this first line is ignored and has no meaning.
 
 *Shebang emulator* is an alternative to create wxBasic executables on Windows without having 
@@ -11,7 +12,7 @@ to binary the script.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  abShebang                                          |
+| **Name:**            |  Shebang                                          |
 | **Version:**         |  1.1                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  System                                 |
