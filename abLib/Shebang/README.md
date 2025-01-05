@@ -91,7 +91,7 @@ Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
 :now()
 ```
 
-### Linux/UNIX Shebang
+### Real Linux/UNIX Shebang
 
 ```shell-script
 #!/usr/bin/wxbasic
