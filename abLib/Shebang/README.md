@@ -67,7 +67,7 @@ Remarks
   to the variable `goto`.
 * *Last line:* Used to label the last line of the script. For **CMD**, define label `:NOW()`. For **wxBasic** 
   two commands are concatenated on a single line using `:`. Without first command, followed by the call to 
-  the procedure `now()` .
+  the procedure `now()` .   
   **NOTE:** The word `NOW()` is used as a label because in wxBasic it operates as a function (necessary for the
   assignment on line 5) and as a procedure (necessary to create the label).
 
