@@ -35,13 +35,14 @@ Commands list
 Remark
 ------
 
-* `n`    is a decimal integer number; 
-* `"n"`  is a string with the number in any other base. If the base is less than or 
-         equal to 10, "n" can be a numeric data;
-* `base` is an integer with the base to be exchanged. This is an optional parameter,
-         default is 16 (hexadecimal numbering). It can be any number less than or equal 
-         to 85. If it is less than or equal to 36 (from 0 to Z), it is not case sensitive 
-         (letters can be uppercase or lowercase).
+* True console input and output for operating systems is only available in CLI versions of 
+  wxBasic via the INPUT and PRINT commands. In GUI versions the PRINT command produces 
+  output to a virtual console and the INPUT command is disabled.
+* `abSTD_PRINT` Prints a text to the system's standard output. To leave a blank line use 
+                an empty text "" . It is the default command and can be omitted by placing 
+                only the text. The text can also be a variable or a numeric value or any 
+                other type of data.
+* `abSTD_CLEAR` Clear all text from the system console.
 
 
 Example
