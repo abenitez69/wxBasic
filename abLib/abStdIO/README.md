@@ -44,7 +44,7 @@ Remark
                 an empty text "". It is the default command and can be omitted by placing 
                 only the text. The text can also be a variable or a numeric value or any 
                 other type of data.
-* `abSTD_INPUT` Enter a text via the system's standard input. The label is a mandatory  
+* `abSTD_INPUT` Enter a text via the system's standard input. The label is a mandatory
                 parameter; if you want to omit it, use an empty text "". If a single 
                 `abSTD_INPUT` is used in the command list, the function returns a string 
                 variable with the entered text. On the other hand, if multiple `abSTD_INPUT` 
