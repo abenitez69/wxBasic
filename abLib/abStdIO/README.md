@@ -43,18 +43,18 @@ Remark
 * `abSTD_PRINT` Prints a text to the system's standard output. To leave a blank line use 
                 an empty text "". It is the default command and can be omitted by placing 
                 only the text. The text can also be a variable or a numeric value or any 
-                other type of data.
+                other type of data.   
+  **NOTE:** Using commands `abSTD_PRINT`, `abSTD_CLEAR`, `abSTD_PAUSE` and `abSTD_DELAY`
+  does not generate any output, which is why `abStdIO` is invoked as a procedure.
 * `abSTD_INPUT` Enter a text via the system's standard input. The label is a mandatory
                 parameter; if you want to omit it, use an empty text "". If a single 
                 `abSTD_INPUT` is used in the command list, the function returns a string 
                 variable with the entered text. On the other hand, if multiple `abSTD_INPUT` 
                 are used in the command list, the function returns a list variable. Each 
                 element in the list corresponds to a string variable in the same order in 
-                which they were entered.
-* Using commands `abSTD_PRINT`, `abSTD_CLEAR`, `abSTD_PAUSE` and `abSTD_DELAY` does not 
-  generate any output, which is why `abStdIO` is invoked as a procedure.
-* The `abSTD_INPUT` command returns the values ​​entered by the console. If at least one 
-  `abSTD_INPUT` appears in the command list, `abStdIO` must be invoked as a function.
+                which they were entered.   
+  **NOTE:** The `abSTD_INPUT` command returns the values ​​entered by the console. If at least 
+  one `abSTD_INPUT` appears in the command list, `abStdIO` must be invoked as a function.
 
 
 
