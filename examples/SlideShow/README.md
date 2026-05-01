@@ -42,7 +42,11 @@ The configuration window is accessed by right-clicking on the *.scr* file or fro
 
 The options are:
 
-* Image folder path or URL.
+* Image folder local path or URL.
 * Transparent or colored text background.
 * Font type and size.
 * Font and border/background color.
+* Text margins relative to the screen edge.
+* How long each photo remains on screen
+
+
