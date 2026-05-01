@@ -39,3 +39,10 @@ If the resolution subfolders are omitted and the photos are not the same resolut
 The configuration window is accessed by right-clicking on the *.scr* file or from the corresponding button in the system's screensaver settings window:
 
 ![Options screen](./config.png)
+
+The options are:
+
+* Image folder path or URL.
+* Transparent or colored text background.
+* Font type and size.
+* Font and border/background color.
