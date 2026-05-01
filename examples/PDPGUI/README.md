@@ -18,17 +18,10 @@ PDP-GUI is a modern graphical interface for old Deerhaven Technical's PD-PLUS pr
 Remarks
 -------
 
-Images can be stored in a local folder (relative or absolute path), e.g.:
-  * ./pictutes
-  * C:\Users\Agustin\Pictures
-
-or shared from an HTTP or FTP server, e.g.:
-  * http://www.media.com/SlideShow/Pictures
-  * ftp://ftp.download.net/sldshw/pics
-  
-Optionally, the image folder can contain several subfolders named **WxH** (e.g., 1600x1200, 1920x1080, etc.), specifying the *width* and *height* of the images in each. The program automatically selects the folder with the aspect ratio and resolution closest to the computer screen and then adjusts the image to full screen. This allows "manual *pan & scan*", without affecting the image composition.
-
-If the resolution subfolders are omitted and the photos are not the same resolution as the screen, the program performs *pan & scan* automatically.
+PD-PLUS is an very fast, large-capacity, exceedingly robust, PC-based program for simulating chemical processes, including 
+refinery systems and non-ideal chemicals.  It handles multiple-operation flowsheets with recycle streams.  An interactive mode 
+provides complete user control of the simulation and rapid evaluation of different process conditions. PD-PLUS may be 
+interfaced with or driven by other software packages easily. 
 
 <br>
 
