@@ -21,19 +21,10 @@ Remarks
 PD-PLUS is an very fast, large-capacity, exceedingly robust, PC-based program for simulating chemical processes, including 
 refinery systems and non-ideal chemicals.  It handles multiple-operation flowsheets with recycle streams.  An interactive mode 
 provides complete user control of the simulation and rapid evaluation of different process conditions. PD-PLUS may be 
-interfaced with or driven by other software packages easily. 
+interfaced with or driven by other software packages easily.
+
+It was developed and marketed by Deerhaven Technical Software until 2004. Although it had versions for Windows, its greatest success was with the MS-DOS versions.
 
 <br>
 
-The configuration window is accessed by right-clicking on the *.scr* file or from the corresponding button in the system's screensaver settings window:
 
-![Options screen](./config.png)
-
-The options are:
-
-* Image folder local path or URL.
-* Transparent or colored text background.
-* Font type and size.
-* Font and border/background colors.
-* Text margins relative to the screen edge.
-* How long each photo remains on screen
