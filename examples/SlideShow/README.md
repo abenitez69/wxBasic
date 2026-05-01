@@ -36,6 +36,6 @@ If the resolution subfolders are omitted and the photos are not the same resolut
   * http://www.media.com/SlideShow/Pictures
   * ftp://ftp.download.net/sldshw/pics
 
-The configuration window is accessed by right-clicking on the *.scr* file or from the corresponding button in the system's screen protector settings window:
+The configuration window is accessed by right-clicking on the *.scr* file or from the corresponding button in the system's screensaver settings window:
 
 ![Options screen](./config.png)
