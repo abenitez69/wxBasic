@@ -28,3 +28,5 @@ It was developed and marketed by Deerhaven Technical Software until 2004. Althou
 <br>
 
 PDP-GUI provides this software with a Windows user interface; which includes a panel for the editor with syntax highlighting and another panel to display the simulation results; integrated help according to the editor commands; documentation of the examples including process flow diagrams.
+
+The interface allows the simulation to be run in PD-PLUS 4.82 for MS-DOS from older operating systems (Windows 98 or XP) to the most modern 64-bit systems (Windows 10 or 11).
