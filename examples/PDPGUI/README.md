@@ -1,16 +1,14 @@
-PD-PLUS Chemical Processor Simulator GUI
-========================================
+PD-PLUS Chemical Process Simulator
+==================================
 
-Show photos randomly and includes the metadata (EXIF) text:
-  * Title (in upper right of screen) and,
-  * Author/date (in the lower right).
+PDPGUI is a modern graphical interface for Deerhaven Technical's PDPLUS process simulator.
 
 <br>
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  SlideShow                                          |
-| **Version:**         |  4.2                                                |
+| **Name:**            |  PDP-GUI                                          |
+| **Version:**         |  6.3.0                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  System (screensaver) / Media (images)                                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9744; 2.08  &nbsp; &nbsp; &nbsp;  &#9744; 3.2  &nbsp; &nbsp; &nbsp;  &#9744; Console  |
