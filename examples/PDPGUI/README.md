@@ -1,7 +1,7 @@
 PD-PLUS Chemical Process Simulator
 ==================================
 
-PDPGUI is a modern graphical interface for Deerhaven Technical's PDPLUS process simulator.
+PDP-GUI is a modern graphical interface for old Deerhaven Technical's PD-PLUS process simulator.
 
 <br>
 
