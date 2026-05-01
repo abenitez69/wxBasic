@@ -33,3 +33,9 @@ Optionally, the image folder can contain several subfolders named **WxH** (e.g.,
 
 If the resolution subfolders are omitted and the photos are not the same resolution as the screen, the program performs *pan & scan* automatically.
 
+  * http://www.media.com/SlideShow/Pictures
+  * ftp://ftp.download.net/sldshw/pics
+
+The configuration window is accessed by right-clicking on the ´scr´ file.
+
+![Options screen](./config.png)
