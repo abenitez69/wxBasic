@@ -29,10 +29,7 @@ or shared from an HTTP or FTP server, e.g.:
   * ftp://ftp.download.net/sldshw/pics
   
 
-Optionally, the image folder can contain several subfolders named WxH (e.g., 1600x1200, 1920x1080, etc.), specifying the width and height of the images in each. The program automatically selects the folder with the aspect ratio and resolution closest to the computer screen and then adjusts the image to full screen. This allows manual "pan & scan", without affecting the image composition.
+Optionally, the image folder can contain several subfolders named **WxH** (e.g., 1600x1200, 1920x1080, etc.), specifying the *width* and *height* of the images in each. The program automatically selects the folder with the aspect ratio and resolution closest to the computer screen and then adjusts the image to full screen. This allows "manual *pan & scan*", without affecting the image composition.
 
-If the resolution subfolders are omitted and the photos are not the same resolution as the screen, the program performs "pan & scan" automatically.
-myColor = wxGetColorFromUser( Nothing, wxColour(0,0,0) )
-Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
-```
+If the resolution subfolders are omitted and the photos are not the same resolution as the screen, the program performs *pan & scan* automatically.
 
