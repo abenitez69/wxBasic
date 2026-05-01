@@ -43,7 +43,7 @@ The options are:
 * Image folder local path or URL.
 * Transparent or colored text background.
 * Font type and size.
-* Font and border/background color.
+* Font and border/background colors.
 * Text margins relative to the screen edge.
 * How long each photo remains on screen
 
