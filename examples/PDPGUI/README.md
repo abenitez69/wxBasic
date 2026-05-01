@@ -27,4 +27,4 @@ It was developed and marketed by Deerhaven Technical Software until 2004. Althou
 
 <br>
 
-
+PDP-GUI provides this software with a Windows user interface; which includes a panel for the editor with syntax highlighting and another panel to display the simulation results; integrated help according to the editor commands; documentation of the examples including process flow diagrams.
