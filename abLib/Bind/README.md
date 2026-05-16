@@ -19,14 +19,6 @@ It is common practice, when creating executables for Windows, to assign a specif
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9744; Linux  &nbsp; &nbsp; &nbsp;  &#9744; macOS  |
 
 
-Idea
-----
-
-The main idea is to place the wxBasic script code in a Windows batch file (*.CMD or *.BAT) 
-using meaningful BASIC codes to the batch file. These codes, common to both scripts, should 
-not produce significant changes or console output in wxBasic. Common codes should, first of all, 
-allow the Windows command interpreter to execute them with the wxBasic virtual machine. It can 
-also clear the screen, avoid echoing on the screen, jump to the end of the program, etc.
 
  
 Syntax
