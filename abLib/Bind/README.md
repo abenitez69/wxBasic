@@ -24,7 +24,7 @@ It is common practice, when creating executables for Windows, to assign a specif
 Syntax
 ------
 
-* `bind <source.wxb> [iconfile.ico]    ` Returns a string in any numeric base from a number in decimal base.
+&nbsp;&nbsp;&nbsp; `bind <source.wxb> [iconfile.ico]    ` Create a binary for Windows including the icon.
 
 
 
