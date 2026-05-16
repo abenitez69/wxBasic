@@ -39,9 +39,9 @@ Remarks
 NOTE:
 -----
 This script requires some programs, which must be stored in the same folder:
-* WXBASIC.EXE or BVMC.EXE
-* BIND.WXB
-* RESHACK.EXE or RESHACKFX.EXE
-* UPX.EXE
+* `WXBASIC.EXE` or `BVMC.EXE` or `WXBC.EXE`
+* `BIND.WXB`
+* `RESHACK.EXE` or `RESHACKFX.EXE`
+* `UPX.EXE`
 
 
