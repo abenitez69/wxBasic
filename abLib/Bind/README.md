@@ -33,7 +33,7 @@ Remarks
 
 * The `source` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted if it is `.wxb`.
 * The `iconfile` is the name of the file that corresponds to the icon that will be used in the application. The icon filename is optional. If omitted, two things can happen:
-    - If an icon file with the same name as the `source` exists in the same folder as the script, it will be used.
+    - If an icon file exists in the same folder as `source` and with the same name, it will be used.
 
 "Shebang" Example
 -----------------
