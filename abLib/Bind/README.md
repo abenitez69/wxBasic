@@ -38,6 +38,10 @@ Remarks
 
 NOTE:
 -----
-
+This script requires some programs, which must be stored in the same folder:
+* WXBASIC.EXE or C
+* BIND.WXB
+* RESHACK.EXE or RESHACKFX.EXE
+* UPX.EXE
 
 
