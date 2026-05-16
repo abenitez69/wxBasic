@@ -1,10 +1,9 @@
 Bind for Windows
 ================
 
-A **bind** is the character sequence `#!` followed by the path and name of the interpreter or 
-virtual machine used to run the script. On Linux (and other Unix-like operating systems) the 
-shebang allows the script to be executed by the operating system as a binary program.
-In wxBasic for Windows this first line is ignored and has no meaning.
+The **bind.wxb** utility was created by David Cuny from the early versions of wxBasic.
+It allows you to "compile" a wxBasic script into a binary executable file.
+The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
 
 *Shebang emulator* is an alternative to create wxBasic executables on Windows without having 
 to binary the script.
