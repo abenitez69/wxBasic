@@ -31,7 +31,7 @@ Syntax
 Remarks
 -------
 
-* The `source` file corresponds to the wxBasic script to be "compiled". The extension can be omitted if it is `.wxb`.
+* The `source` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted if it is `.wxb`.
 
 
 "Shebang" Example
