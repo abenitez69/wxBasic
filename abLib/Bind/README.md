@@ -1,7 +1,7 @@
-Shebang Emulator for Windows
-============================
+Bind for Windows
+================
 
-A **shebang** is the character sequence `#!` followed by the path and name of the interpreter or 
+A **bind** is the character sequence `#!` followed by the path and name of the interpreter or 
 virtual machine used to run the script. On Linux (and other Unix-like operating systems) the 
 shebang allows the script to be executed by the operating system as a binary program.
 In wxBasic for Windows this first line is ignored and has no meaning.
