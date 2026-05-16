@@ -32,7 +32,7 @@ Remarks
 -------
 
 * The `source` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted if it is `.wxb`.
-
+* The `iconfile` is the name of the file that corresponds to the icon that will be used in the application.
 
 "Shebang" Example
 -----------------
