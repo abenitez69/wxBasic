@@ -31,29 +31,7 @@ Syntax
 Remarks
 -------
 
-* *Line 1:* Used to `ECHO OFF`. For **CMD**, two commands are concatenated on a single line using `&`. 
-  First an echo on screen that does not write anything, followed by the command `@ECHO OFF`. For 
-  **wxBasic**, first it is an empty assignment to the string variable `echo` and then a comment.
-* *Line 2:* It is used to clear the screen in both **CMD** and **wxBasic**. It is only implemented 
-  in wxBasic versions 3.x and higher and in all console versions.   
-  **NOTE:** To use this script with GUI versions of wxBasic 2.x, remove this line.
-* *Lines 3 and 4:* Used to run the same script with the wxBasic virtual machine. For **CMD**, first
-  a comment is included (necessary to run in wxBasic) and on the next line wxBasic virtual machine
-  is launched (in the example BVMC.EXE) followed by the name and path of the script (`%0`), finally
-  the batch arguments are passed. For **wxBasic**, first it is an empty assignment to the string
-  variable `rem` followed by the string concatenation operator and on the next line the assignment
-  ends after concatenating the remaining text, followed by a comment.   
-  **NOTE 1:** To use this script with GUI versions of wxBasic, change the `bvmc.exe` to `wxbasic.exe`.  
-  **NOTE 2:** As in Linux, you can also include the path to the executable; in this case change each 
-  backslash to a double backslash in the path. For example: `"D:\\wxBasic\\wxbasic.exe" // %0 %1 %2 %3 %4 %5`
-* *Line 5:* Used to jump to the end of the batch script and ignore the wxBasic code on the 
-  following lines. For **CMD** jump to label `NOW()` and for **wxBasic** assigns the current time 
-  to the variable `goto`.
-* *Last line:* Used to label the last line of the script. For **CMD**, define label `:NOW()`. For **wxBasic** 
-  two commands are concatenated on a single line using `:`. Without first command, followed by the call to 
-  the procedure `now()` .   
-  **NOTE:** The word `NOW()` is used as a label because in wxBasic it operates as a function (necessary for the
-  assignment on line 5) and as a procedure (necessary to create the label).
+* The `source` file corresponds to the wxBasic script to be "compiled". The extension can be omitted if it is `.wxb`.
 
 
 "Shebang" Example
