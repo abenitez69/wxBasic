@@ -36,35 +36,8 @@ Remarks
     - If an icon file exists in the same folder as `source` and with the same name, it will be used.
     - Otherwise, the executable retains the wxBasic virtual machine default icon.
 
-"Shebang" Example
------------------
+NOTE:
+-----
 
-```dosbatch
-echo="" // & @echo off
-rem ="" &
-"C:\\Program Files\\wxBasic\\wxbasic.exe" //%0 %1 %2 %3
-goto =now()
 
-wxMessageBox( "Message box:\nMultiline sample", "wxMessageBox Sample", wxICON_INFORMATION )
-Print wxGetTextFromUser( "Message\nmultiline:", "wxGetTextFromUser Sample", "Default value" )
-Print wxGetPasswordFromUser( "Message\nmultiline:", "wxGetPasswordFromUser Sample", "NONEPASS" )
-Print wxGetNumberFromUser( "Message\nmultiline:", "ID =", "wxGetNumberFromUser Sample", 10, 1, 20 )
-myColor = wxGetColorFromUser( Nothing, wxColour(0,0,0) )
-Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
-
-:now()
-```
-
-### Real Linux/UNIX Shebang
-
-```shell-script
-#!/usr/bin/wxbasic
-
-wxMessageBox( "Message box:\nMultiline sample", "wxMessageBox Sample", wxICON_INFORMATION )
-Print wxGetTextFromUser( "Message\nmultiline:", "wxGetTextFromUser Sample", "Default value" )
-Print wxGetPasswordFromUser( "Message\nmultiline:", "wxGetPasswordFromUser Sample", "NONEPASS" )
-Print wxGetNumberFromUser( "Message\nmultiline:", "ID =", "wxGetNumberFromUser Sample", 10, 1, 20 )
-myColor = wxGetColorFromUser( Nothing, wxColour(0,0,0) )
-Print "RGB:", myColor.Red(), myColor.Green(), myColor.Blue()
-```
 
