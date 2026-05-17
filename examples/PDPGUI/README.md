@@ -9,6 +9,7 @@ PDP-GUI is a modern graphical interface for old Deerhaven Technical's PD-PLUS pr
 |:---------------------|:----------------------------------------------------|
 | **Name:**            |  PDP-GUI                                          |
 | **Version:**         |  6.3.0                                                |
+| **Developer**        |  Agustín Benítez Hernández       |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility (chemical engineering)                                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9744; 2.08  &nbsp; &nbsp; &nbsp;  &#9744; 3.2  &nbsp; &nbsp; &nbsp;  &#9744; Console  |
