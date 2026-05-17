@@ -11,6 +11,7 @@ Show photos randomly and includes the metadata (EXIF) text:
 |:---------------------|:----------------------------------------------------|
 | **Name:**            |  SlideShow                                          |
 | **Version:**         |  4.2                                                |
+| **Developer:**        |  Agustín Benítez Hernández       |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  System (screensaver) / Media (images)                                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9744; 2.08  &nbsp; &nbsp; &nbsp;  &#9744; 3.2  &nbsp; &nbsp; &nbsp;  &#9744; Console  |
