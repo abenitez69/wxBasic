@@ -24,7 +24,7 @@ It is common practice, when creating executables for Windows, to assign a specif
 Syntax
 ------
 
-&nbsp;&nbsp;&nbsp; `bind <source.wxb> [iconfile.ico]    ` Create a binary for Windows including the icon.
+&nbsp;&nbsp;&nbsp; `bind <source.wxb> [<iconfile.ico>]    ` Create a binary for Windows including the icon.
 
 
 
