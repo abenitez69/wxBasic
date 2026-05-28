@@ -41,7 +41,6 @@ Example
 Option Explicit
 Include "abBase64.inc"
 
-// Get JPG image
 Dim H = fOpen( "demo.jpg", "r" ),
             SizeJPG = Lof( H ),
             BinLst = []
