@@ -47,6 +47,6 @@ This script requires some programs, which must be stored in the same folder:
 The first one corresponds to one of the *wxBasic virtual machines*, which is used to perform the binding and to run the `bind.wxb` program. The second is the script (written in wxBasic) responsible for performing the **bind**.
 *Resource Hacker* is a free resource developed by Angus Johnson used to replace icon. Last program is *Ultimate Packer for eXecutables*, a free and open source executable packer used for decompress/compress the *wxBasic virtual machines*.
 
-**NOTE:**
+**VERY IMPORTANT NOTE:**
 
 Each version of *wxBasic* requires that these programs be compatible with the architecture used by the virtual machine. This folder includes all the programs necessary to use **bind.bat** for *wxBasic* versions `0.6`, `2.5`, `2.08.12.43`, and `3.2.5.52`.
