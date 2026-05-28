@@ -1,8 +1,10 @@
 @echo off
 set WXFILE="%~d1%~p1%~n1.wxb"
+if not exist %WXFILE% set WXFILE="%~d1%~p1%~n1.wx"
 if not exist %WXFILE% goto help
 set BINFILE="%~d0%~p0wxbasic.exe"
 if not exist %BINFILE% set BINFILE= "%~d0%~p0bvmc.exe"
+if not exist %BINFILE% set BINFILE= "%~d0%~p0wxbc.exe"
 if not exist %BINFILE% goto help
 set BINDFILE="%~d0%~p0bind.wxb"
 if not exist %BINDFILE% goto help
