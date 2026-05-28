@@ -45,4 +45,5 @@ This script requires some programs, which must be stored in the same folder:
 * `UPX.EXE`
 
 The first one corresponds to one of the *wxBasic virtual machines*, which is used to perform the binding and to run the `bind.wxb` program. The second is the script (written in wxBasic) responsible for performing the **bind**.
+*Resource Hacker* is a free resource developed by Angus Johnson used to replace icon.
 
