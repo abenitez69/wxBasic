@@ -26,7 +26,7 @@ Remark
 ------
 
 * `ByteList`    is a list of binary bytes; 
-* `TextBase64`  is a string with coded as Base64;
+* `TextBase64`  is a string coded as Base64;
 
 The string Base64 Data Encodings according to the encoding proposed in 
 [RFC 3548](https://www.rfc-editor.org/rfc/rfc3548) and [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648):
