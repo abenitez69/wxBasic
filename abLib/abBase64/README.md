@@ -1,4 +1,4 @@
-*abBase64*: Converts From/To Any Base
+*abBase64*: Encode/Decode MIME Base64
 =======================================
 
 Encode to MIME Base64 and decode from MIME Base64.
