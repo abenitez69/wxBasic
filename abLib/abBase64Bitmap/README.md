@@ -18,7 +18,9 @@ Encode to MIME Base64 and decode from MIME Base64.
 Syntax
 ------
 
-* `abBase64Bitmap( ImageAsBase64 )   `    Returns a binary byte list from string coded as Base64.
+* `abBase64Bitmap( ImageAsBase64 )   `    Constructor to creates a bitmap from an Base64 text.
+
+.
 
 
 Remark
