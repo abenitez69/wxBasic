@@ -9,7 +9,7 @@ Encode to MIME Base64 and decode from MIME Base64.
 | **Name:**            |  **abBase64Bitmap**                                 |
 | **Version:**         |  1.3                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9673; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
-| **Category:**        |  wxBitmap and string (Bas                           |
+| **Category:**        |  wxBitmap and string (Base64)                        |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.08  &nbsp; &nbsp; &nbsp;  &#9745; 3.2  &nbsp; &nbsp; &nbsp;  &#9744; Console  |
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9745; Linux  &nbsp; &nbsp; &nbsp;  &#9745; macOS  |
 
