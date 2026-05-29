@@ -18,8 +18,7 @@ Encode to MIME Base64 and decode from MIME Base64.
 Syntax
 ------
 
-* `abBase64Encode( ByteList )     `    Returns a string coded as Base64 from binary byte list.
-* `abBase64Decode( TextBase64 )   `    Returns a binary byte list from string coded as Base64.
+* `abBase64Bitmap( ImageAsBase64 )   `    Returns a binary byte list from string coded as Base64.
 
 
 Remark
