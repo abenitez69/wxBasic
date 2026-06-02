@@ -3,7 +3,7 @@ use MIME::Base64;
 my $BinFile = $ARGV[0];
 exit if( $BinFile eq "" );
 
-open( FILE, "demo.jpg" );
+open( FILE, $BinFile );
     my $BinLst = join( '', <FILE> );
 close( FILE );
 
