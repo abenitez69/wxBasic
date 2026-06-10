@@ -1,7 +1,10 @@
 *abBase64Bitmap*: Bitmap image from MIME Base64
 ===============================================
 
-Encode to MIME Base64 and decode from MIME Base64.
+The *wxBitmap* class includes several constructors (*wxBitmap*, *wxEmptyBitmap*, *wxCopyBitmap*, etc.), but they all load the image from an external file.
+In small (single-file) projects, it is convenient to include the images within the script itself.
+
+**abBase64Bitmap** is a constructor for the *wxBitmap* class that allows loading the image from a Base64 encoded string variable.
 
 
 | Library description  | |
