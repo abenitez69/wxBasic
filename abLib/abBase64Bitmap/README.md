@@ -37,29 +37,29 @@ Example
 
 ```python
 Option Explicit
-Include "abBase64.inc"
+Include "abBase64Bitmap.inc"
 
-Dim H = fOpen( "demo.jpg", "r" ),
-            SizeJPG = Lof( H ),
-            BinLst = []
-            For i=1 To SizeJPG
-                BinLst.Append( readByte( H ))
-            End For
-        fClose( H )
+Dim myVar = "iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI" &
+            "WXMAAA50AAAOdAFrJLPWAAAAB3RJTUUH6gYKEAYI31ELRAAAAtxJREFUaN7tWD9oU2EQ//1qoIJC" &
+            "hQoVMrTgUIeCDoIOgkgj7eAgGHB1cBBcCnZwFTsILjqJmEHQoaDgIljRouDSQaFDhBYFCwpmsJRQ" &
+            "RaWFc8g9eb7cfS9J2+RJcnDDu7vv3nf3fffvo4igk0CyoxvIbffmRYTN6vHOgASsAyIJa0ntxzbH" &
+            "09OHLoeeA3oO6Dmg54Cuhtz/unF2swO85o1kLwS2xQEkh0jeJPmBpJBcI3mP5FATXeJhks9I/iS5" &
+            "TvIFyfFMXqc4ApgAsKY9ZRK/AhhVOYsvyhsHsO7IXE/8L7mFv6j6GoaafjEQvnxiMycBbHjGKX4C" &
+            "MBDgDweMj/DyVhwQ1t2cAxglFJKDAMoADjRwcR4DKDq8OQCTKet/ATgiIsskpZVhCK+MBae2NgzN" &
+            "NGg8AsajAeMBYDeAG5lJgprcLhj870rfqziltDR4C+CojsYFABVD5izJ4aw0QkU9lbpNish87Ps2" &
+            "ySW95h58AzApIqsa4PMkCwAWjb6jmJUyWDB4swnjo6rxHMDDgM5bkfGxNe8BlAzZE218eapDEWHk" &
+            "gDFjzf2AvlKA99Shzxq0sTYVewNrL1qRA0acOA7FuAdLDn3RoI10sAP6JwRyxlVfDTRPPwK83w69" &
+            "msVZpC8QM7sCvMEAb49D78/i/Bg5YMXgHQpoOx7geXFt6fvSLuNrjRBdB5StEhjQeLGFJumMQSu3" &
+            "kr13IgQWDN40ybyxofMpzrlE8qARMlOG7EJ4UHM6+x1wgFWi9gF4TXKCZD/JAZJXUnoAaMc4F42+" &
+            "JEe1NO53ZorOZobYMPQk5WS3G16KyOnQMOSHBZochqIkKHW0eBW4qlNaI1BKmRTTYFP/1/a675ZB" &
+            "EVl24jQJKwCmUxLkxxQdMyLyLnNPYiJyV52w6chXdNCpBhqhqmb8SmBWuNZ502k/iWlAHgPwKPY0" &
+            "9hnAHQB59/mmXkcewAN9HdoA8AbAOUNOOoUigj+EzziRzx0f6wAAAABJRU5ErkJggg=="
 
-Dim MimeBase64 = abBase64Encode( BinLst )
-
-H = fOpen( "to_base64.txt", "w" )
-        fPuts( H, MimeBase64 )
-    fClose( H )
-
-Dim Binar = abBase64Decode( MimeBase64 )
-
-H = fOpen( "from_base64.jpg", "w" )
-       For i = 1 To Binar.Length()
-          writeByte( H, Binar[i] )
-       End For
-    fClose( H )
+Dim myImage As wxBitmap = abBase64Bitmap( myVar ),
+    myFrame As wxFrame = New wxFrame( Nothing, -1, "", wxPoint(10,10), wxSize( myImage.GetWidth() + 40, myImage.GetHeight() + 60 )),
+    myBitmap As wxBitmapButton = New wxBitmapButton( myFrame, -1 , myImage, wxPoint(-1, -1), wxSize(-1, -1), wxNO_BORDER )
+myFrame.Centre()
+myFrame.Show( TRUE )
 ```
 
 
