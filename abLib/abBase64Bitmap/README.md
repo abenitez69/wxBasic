@@ -29,10 +29,7 @@ Remark
 
 * `ImageBase64`  is a string coded as Base64.
 
-The string Base64 Data Encodings according to the encoding proposed in 
-[RFC 3548](https://www.rfc-editor.org/rfc/rfc3548) and [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648):
-
-`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/`
+The **Encoder** folder includes an encoder (programmed in wxBasic, Python, Perl, and as Windows binary) that converts a binary image file into a wxBasic script with a ready-to-use string variable as argument to **abBase64Bitmap** constructor.
 
 
 Example
