@@ -41,26 +41,25 @@ Example
 Option Explicit
 Include "abBase64.inc"
 
-Dim H = fOpen( "demo.jpg", "r" ),
-            SizeJPG = Lof( H ),
-            BinLst = []
-            For i=1 To SizeJPG
-                BinLst.Append( readByte( H ))
-            End For
-        fClose( H )
+Dim BinLst = [],
+H = fOpen( "demo.jpg", "r" )
+     For i=1 To Lof( H )
+         BinLst.Append( readByte( H ))
+     End For
+fClose( H )
 
 Dim MimeBase64 = abBase64Encode( BinLst )
 
 H = fOpen( "to_base64.txt", "w" )
         fPuts( H, MimeBase64 )
-    fClose( H )
+fClose( H )
 
 Dim Binar = abBase64Decode( MimeBase64 )
 
 H = fOpen( "from_base64.jpg", "w" )
-       For i = 1 To Binar.Length()
+     For i = 1 To Binar.Length()
           writeByte( H, Binar[i] )
-       End For
-    fClose( H )
+     End For
+fClose( H )
 ```
 
