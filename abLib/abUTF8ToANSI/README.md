@@ -18,24 +18,16 @@ Transforms a string as UTF8 encoding into Windows-1252 encoding (aka *ANSI* code
 Syntax
 ------
 
-* `abUTF8ToANSI( Text )    `    Returns a string encoded as Windows-1252 (aka ANSI) from a text encoded as UTF-8.
+* `abUTF8ToANSI( StrUTF8 )    `    Returns a string encoded as Windows-1252 (aka ANSI) from a string encoded as UTF-8.
 
 
 Remark
 ------
 
-* `n`    is a decimal integer number; 
-* `"n"`  is a string with the number in any other base. If the base is less than or 
-         equal to 10, "n" can be a numeric data;
-* `base` is an integer with the base to be exchanged. This is an optional parameter,
-         default is 16 (hexadecimal numbering). It can be any number less than or equal 
-         to 85. If it is less than or equal to 36 (from 0 to Z), it is not case sensitive 
-         (letters can be uppercase or lowercase).
+* `StrUTF8`    is a string encoded as UTF-8  
 
-The string with the non-decimal digits according to the encoding proposed in 
-[RFC 1924](https://www.rfc-editor.org/rfc/rfc1924):
-
-`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_´{|}~`
+**NOTE:** Although UTF-8 encoding allows the representation of more than 143,000 Unicode characters, 
+only the 256 corresponding to Windows-1252 (aka ANSI) encoding are supported.
 
 
 Example
