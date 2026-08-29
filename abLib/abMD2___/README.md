@@ -37,15 +37,9 @@ or it generates a full document, including headers or preambles with font and co
 Remark
 ------
 
-* `MD`    is a string, list, or table containing text in Markdown markup language..  
+* `MD`    is a string, list, or table containing text in Markdown markup language.  
 
-**NOTE:** Although UTF-8 encoding allows the representation of more than 143,000 Unicode characters, 
-only the 256 corresponding to Windows-1252 (aka ANSI) encoding are supported.
-
-Due to its similarity to *Windows-1252* encoding, the following codes can be accepted:
-
-* *ISO-8859-1* (aka *Latin 1*)
-* *ISO-8859-15* (aka *Latin 9*), except for the characters: €, Š, š, Ž, ž, Œ, and œ
+**NOTE:** If `MD` is a list or table, one element per MD line; else if `MD` is a string, each line separated by `\n`.
 
 
 Example
