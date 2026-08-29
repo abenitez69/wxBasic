@@ -1,15 +1,15 @@
-*abUTF8ToANSI*: Converts From UTF8 Encode To ANSI Encode
-========================================================
+*abUTF8ToANSI*: Converts From UTF8 To ANSI Encode
+=================================================
 
-Transforms a numerical value from one number system to another.
+Transforms a string as UTF8 encoding into Windows-1252 encoding (aka *ANSI* code page).
 
 
 | Library description  | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  **abDec2Base.inc**                                     |
-| **Version:**         |  3.2                                                |
+| **Name:**            |  **abUTF8ToANSI**                                   |
+| **Version:**         |  1.5                                                |
 | **Type:**            |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
-| **Category:**        |  Numeric and string                                 |
+| **Category:**        |  String                                 |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.08  &nbsp; &nbsp; &nbsp;  &#9745; 3.2  &nbsp; &nbsp; &nbsp;  &#9745; Console  |
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9745; Linux  &nbsp; &nbsp; &nbsp;  &#9745; macOS  |
 
