@@ -6,7 +6,7 @@ Transforms a string as UTF8 encoding into Windows-1252 encoding (aka *ANSI* code
 
 | Library description  | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  **abUTF8ToANSI**                                   |
+| **Name:**            |  **abUTF8ToANSI.inc**                                   |
 | **Version:**         |  1.5                                                |
 | **Type:**            |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
 | **Category:**        |  String                                 |
@@ -18,8 +18,7 @@ Transforms a string as UTF8 encoding into Windows-1252 encoding (aka *ANSI* code
 Syntax
 ------
 
-* `abDecToBase(  n , base )    `    Returns a string in any numeric base from a number in decimal base.
-* `abBaseToDec( "n", base )    `    Returns a decimal number from a string in any number base.
+* `abUTF8ToANSI( Text )    `    Returns a string encoded as Windows-1252 (aka ANSI) from a text encoded as UTF-8.
 
 
 Remark
