@@ -1,12 +1,12 @@
 *abMD2___*: Parse From Markdown To Other...
 =========================================
 
-Transforms a string as UTF-8 encoding into Windows-1252 encoding (aka *ANSI* code page).
+Parse from Markdown and convert to HTML, LaTeX and/or Rich Text Format (RTF).
 
 
 | Library description  | |
 |:---------------------|:----------------------------------------------------|
-| **Names:**            |  **abMD2HTML.inc**                                  |
+| **Names:**           |  **abMD2HTML.inc**                                  |
 |                      |  **abMD2RTF.inc**                                   |
 |                      |  **abMD2TEX.inc**                                   |
 | **Version:**         |  3.2                                                |
