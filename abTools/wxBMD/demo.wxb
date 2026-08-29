@@ -1,0 +1,30 @@
+'  BMD Demo
+'  --------
+'
+'  This is a BMD sample code.
+'  **Run with wxBMD**.
+'
+'  | Library description      |                                           |
+'  |--------------------------|-------------------------------------------|
+'  | **Name:**                |  wxBMD.wxb                                |
+'  | **Version:**             |  3.4                                      |
+'  | **Type:**                |  ( ) Function   ( ) Class   (o) Script    |
+'  | **wxBasic vers:**        |  [ ] 0.6   [x] 2.5   [x] 2.08   [x] 3.2   |
+'  | **wxBasic UI:**          |  [ ] CLI   [x] GUI                        |
+'  | **OS:**                  |  [x] Windows   [x] Linux   [x] macOS      |
+'
+'  *Basic Markdown Documentation* (**BMD**) is a lightweight markup language used to document the
+'  *wxBasic* programming language, modules, and programs; using _Markdown_ markup language.
+'  BMD is designed to be a simple, clean markup language with just enough syntax to be useful.
+'  Some of its goals are:
+'
+'  * Easy to parse.
+'  * Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX.
+'  * Easy to incorporate sample code.
+'  * Easy to read without a BMD parser (i.e., in its source-code form).
+'  * Easy to write.
+'
+
+
+Print "Run with wxBMD."
+
