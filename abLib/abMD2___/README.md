@@ -37,7 +37,8 @@ or it generates a full document, including headers or preambles with font and co
 Remark
 ------
 
-* `MD`    is a string, list, or table containing text in Markdown markup language.  
+* `MD`    is a string, list, or table containing text in Markdown markup language. 
+* Aways returns a string, each line separated by `\n`.
 
 **NOTE:** If `MD` is a list or table, one element per MD line; else if `MD` is a string, each line separated by `\n`.
 
