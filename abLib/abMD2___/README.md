@@ -20,13 +20,15 @@ Transforms a string as UTF-8 encoding into Windows-1252 encoding (aka *ANSI* cod
 Syntax
 ------
 
-Convert only the Markdown text:
+Convert only the Markdown text an return:
 
 * `abMD2HTML( MD )        `    to HTML.
 * `abMD2TEX( MD )         `    to LaTeX.
 * `abMD2RTF( MD )         `    to Rich Text Format (RTF).
 
-* `abMD2HTMLDoc( MD )        `    Returns a string encoded as Windows-1252 (aka ANSI) from a string encoded as UTF-8.
+or it generates a complete document, including headers or preambles with font and color definitions, necessary packages, styles, and character encoding type:
+
+* `abMD2HTMLDoc( MD )        `    basic HTML document.
 * `abMD2HTMLStyledDoc( MD )  `
 * `abMD2RTFDoc( MD )         `
 * `abMD2TEXDoc( MD )         `
