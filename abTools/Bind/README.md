@@ -49,5 +49,5 @@ The first one corresponds to one of the *wxBasic virtual machines*, which is use
 
 **VERY IMPORTANT NOTE:**
 
-Each version of *wxBasic* requires that these programs be compatible with the architecture used by the virtual machine. This folder includes all the programs necessary to use **bind.bat** for *wxBasic* versions `0.6`, `2.5`, `2.08.12.43`, and `3.2.5.52`.
+Each version of *wxBasic* requires that these programs be compatible with the architecture used by the virtual machine. This folder includes (as ZIP files) all the programs necessary to use **bind.bat** for *wxBasic* versions `0.6`, `2.5`, `2.08.12.43`, and `3.2.5.52`.
 
