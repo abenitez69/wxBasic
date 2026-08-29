@@ -20,7 +20,10 @@ Transforms a string as UTF-8 encoding into Windows-1252 encoding (aka *ANSI* cod
 Syntax
 ------
 
-* `abUTF8ToANSI( StrUTF8 )    `    Returns a string encoded as Windows-1252 (aka ANSI) from a string encoded as UTF-8.
+* `abMD2HTMLDoc( x )        `    Returns a string encoded as Windows-1252 (aka ANSI) from a string encoded as UTF-8.
+* `abMD2HTMLStyledDoc( x )  `
+* `abMD2RTFDoc( x )         `
+* `abMD2TEXDoc( x )`
 
 
 Remark
