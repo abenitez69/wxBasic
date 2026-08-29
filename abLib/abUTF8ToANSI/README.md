@@ -40,22 +40,8 @@ Example
 
 ```python
 Option Explicit
-Include "abDecToBase.inc"
+Include "abUTF8ToANSI.inc"
 
-Print "Hexadecimal base (default base):"
-Print abDecToBase( 255 )
-Print abBaseToDec( "fF" )
-
-Print "Octal base:"
-Print abDecToBase( 477, 8 )
-Print abBaseToDec( 735, 8 )
-
-Print "Thirty-six base (top for not case sensitive):"
-Print abDecToBase( 46655, 36 )
-Print abBaseToDec( "ZzZ", 36 )
-
-Print "Eighty-five base (largest possible base):"
-Print abDecToBase( 51998524, 85 )
-Print abBaseToDec( "~v2S", 85 )
-
+Print abUTF8ToANSI("ÁÉÍÓÚÜÑ áéíóúüñ ¿¡")
+```
 
