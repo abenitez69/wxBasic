@@ -6,8 +6,10 @@ Transforms a string as UTF-8 encoding into Windows-1252 encoding (aka *ANSI* cod
 
 | Library description  | |
 |:---------------------|:----------------------------------------------------|
-| **Name:**            |  **abUTF8ToANSI.inc**                                   |
-| **Version:**         |  1.5                                                |
+| **Name:**            |  **abMD2HTML.inc**                                  |
+|                      |  **abMD2RTF.inc**                                   |
+|                      |  **abMD2TEX.inc**                                   |
+| **Version:**         |  3.2                                                |
 | **Type:**            |  &#9673; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Other |
 | **Category:**        |  String                                 |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.08  &nbsp; &nbsp; &nbsp;  &#9745; 3.2  &nbsp; &nbsp; &nbsp;  &#9745; Console  |
