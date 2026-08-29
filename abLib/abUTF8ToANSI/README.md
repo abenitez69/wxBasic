@@ -1,7 +1,7 @@
-*abUTF8ToANSI*: Converts From UTF8 To ANSI Encode
+*abUTF8ToANSI*: Converts From UTF-8 To ANSI Encode
 =================================================
 
-Transforms a string as UTF8 encoding into Windows-1252 encoding (aka *ANSI* code page).
+Transforms a string as UTF-8 encoding into Windows-1252 encoding (aka *ANSI* code page).
 
 
 | Library description  | |
@@ -28,6 +28,11 @@ Remark
 
 **NOTE:** Although UTF-8 encoding allows the representation of more than 143,000 Unicode characters, 
 only the 256 corresponding to Windows-1252 (aka ANSI) encoding are supported.
+
+Due to its similarity to *Windows-1252* encoding, the following codes can be accepted:
+
+* *ISO-8859-1* (aka *Latin 1*)
+* *ISO-8859-15* (aka *Latin 9*), €ŠšŽžŒœ
 
 
 Example
