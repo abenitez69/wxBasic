@@ -32,7 +32,7 @@ only the 256 corresponding to Windows-1252 (aka ANSI) encoding are supported.
 Due to its similarity to *Windows-1252* encoding, the following codes can be accepted:
 
 * *ISO-8859-1* (aka *Latin 1*)
-* *ISO-8859-15* (aka *Latin 9*), €ŠšŽžŒœ
+* *ISO-8859-15* (aka *Latin 9*), except for the characters: €, Š, š, Ž, ž, Œ, and œ
 
 
 Example
