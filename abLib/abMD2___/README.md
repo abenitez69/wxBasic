@@ -47,9 +47,33 @@ Example
 
 ```python
 Option Explicit
-Include "abUTF8ToANSI.inc"
+Include "abMD2HTML.inc"
+Include "abMD2RTF.inc"
+Include "abMD2TEX.inc"
 
-Print abUTF8ToANSI("ÁÉÍÓÚÜÑ áéíóúüñ ¿¡")
+Dim x = [], fileHandle
+
+fileHandle = fOpen( "demo.md", "r" )
+    While Not EoF( fileHandle )
+       x.Append( fGets( fileHandle ))
+    End While
+fClose( fileHandle )
+
+fileHandle = fOpen( "demo1.html", "w" )
+    fPuts( fileHandle, abMD2HTMLDoc( x ))
+fClose( fileHandle )
+
+fileHandle = fOpen( "demo2.html", "w" )
+    fPuts( fileHandle, abMD2HTMLStyledDoc( x ))
+fClose( fileHandle )
+
+fileHandle = fOpen( "demo3.rtf", "w" )
+    fPuts( fileHandle, abMD2RTFDoc( x ))
+fClose( fileHandle )
+
+fileHandle = fOpen( "demo4.tex", "w" )
+    fPuts( fileHandle, abMD2TEXDoc( x ))
+fClose( fileHandle )
 ```
 
 
