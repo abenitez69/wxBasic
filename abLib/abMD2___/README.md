@@ -37,7 +37,7 @@ or it generates a full document, including headers or preambles with font and co
 Remark
 ------
 
-* `StrUTF8`    is a string encoded as UTF-8  
+* `MD`    is a string, list or table with Markdown Markup Language.  
 
 **NOTE:** Although UTF-8 encoding allows the representation of more than 143,000 Unicode characters, 
 only the 256 corresponding to Windows-1252 (aka ANSI) encoding are supported.
