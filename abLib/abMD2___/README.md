@@ -28,10 +28,10 @@ Convert only the Markdown text an return:
 
 or it generates a full document, including headers or preambles with font and color definitions, necessary packages, styles, and character encoding type:
 
-* `abMD2HTMLDoc( MD )        `    basic HTML document.
-* `abMD2HTMLStyledDoc( MD )  `    styled HTML document.
-* `abMD2RTFDoc( MD )         `    LaTeX document.
-* `abMD2TEXDoc( MD )         `    Rich Text Format (RTF) document.
+* `abMD2HTMLDoc( MD )        `    Return basic HTML document.
+* `abMD2HTMLStyledDoc( MD )  `    Return styled HTML document.
+* `abMD2RTFDoc( MD )         `    Return LaTeX document.
+* `abMD2TEXDoc( MD )         `    Return Rich Text Format (RTF) document.
 
 
 Remark
