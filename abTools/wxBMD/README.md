@@ -28,7 +28,7 @@ BMD is designed to be a simple, clean markup language with just enough syntax to
 wxBMD Syntax
 ------------
 
-&nbsp;&nbsp;&nbsp; `wxBMD <any_wxb_file>    ` Open a BMD viewer.
+&nbsp;&nbsp;&nbsp; `wxBMD <script.wxb> | <library.inc>   ` Open a wxBasic file.
 
 BMD Syntax
 ----------
