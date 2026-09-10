@@ -1,12 +1,16 @@
 BMD and wxBMD
 ================
 
-The **bind.wxb** utility was created by David Cuny from the early versions of wxBasic.
-It allows you to "compile" a wxBasic script into a binary executable file.
-There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file.
-The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
+*Basic Markdown Documentation* (**BMD**) is a lightweight markup language used to document the wxBasic programming 
+language, modules, and programs; using Markdown markup language.
 
-It is common practice, when creating executables for Windows, to assign a specific icon to the new application. The **bind.bat** script allows you to create the binary file for Windows, including the icon for the new application.
+BMD is designed to be a simple, clean markup language with just enough syntax to be useful. Some of its goals are:
+
+* Easy to parse;
+* Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX, through `Save as` option on right-click menu
+* Easy to incorporate sample code;
+* Easy to read without a BMD parser (i.e., in its source-code form);
+* Easy to write.
 
 
 | Script description   | |
@@ -21,11 +25,18 @@ It is common practice, when creating executables for Windows, to assign a specif
 
 
  
-Syntax
-------
+wxBMD Syntax
+------------
 
-&nbsp;&nbsp;&nbsp; `bind <source.wxb> [<iconfile.ico>]    ` Create a binary for Windows, including the icon.
+&nbsp;&nbsp;&nbsp; `wxBMD <any_wxb_file>    ` Open a BMD viewer.
 
+BMD Syntax
+----------
+
+* The BMD parser assumes that all initial lines beginning with consecutive wxBasic comments (`'` or `//`)  containing BMD documentation.
+* BMD documentation ends when the first uncommented line appears. Any subsequent content is ignored by the parser.
+* Any indentation to the left of the comment symbol is ignored.
+* The indentation to the right of the comment symbol is ignored, if it is the same on all lines. Additional indentation on one or more specific lines is considered part of the Markdown code (in a code blocks or a nest list).
 
 
 Remarks
