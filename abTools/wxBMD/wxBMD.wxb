@@ -1,3 +1,5 @@
+#!/usr/bin/wxbasic
+
 Option Explicit
 
 Dim MDContent = [], fileHandle, fileName = Command(3)
@@ -19,16 +21,18 @@ End If
 
 Const wxID_HTML = wxNewId(),  wxID_RTF = wxNewId()
 Dim myFrame = New wxFrame( Nothing, -1, "", wxPoint( 100, 100 ), wxSize( 800, 600 ) ),
-       myHTML = wxHtmlWindow( myFrame, -1, wxPoint( -1, -1 ), wxSize( -1, -1 ) ),
+       myHTML = New wxHtmlWindow( myFrame, -1, wxPoint( -1, -1 ), wxSize( -1, -1 ) ),
        myPopupMenu = New wxMenu()
+       myHTML.SetPage( abMD2HTML( MDContent, IsWindows()))
+       //myHTML.SetPage( abMD2HTMLDoc( MDContent ))
 
-       myHTML.SetPage( abMD2HTMLDoc( MDContent ))
+
        myPopupMenu.Append( wxID_SAVEAS, "Save as..." )
        myPopupMenu.AppendSeparator()
        myPopupMenu.Append( wxID_ABOUT, "About..." )
        myPopupMenu.Append( wxID_EXIT, "E&xit\tAlt-F4" )
 
-     If Val(GetVersion()) >= 2.8 Then myFrame.SetIcon( wxIcon( Icon() ) )
+     If Val(GetVersion()) >= 2.8 Then myFrame.SetIcon( wxIcon( Icon() ))
      myFrame.SetTitle( "wxBMD 3.4 - " & fileName )
      myFrame.Show( True )
 
@@ -90,10 +94,10 @@ End Function
 ///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\
 
 
-Function abMD2HTML( mdText )
+Function abMD2HTML( mdText, ANSI = True )
     Dim mdList = ArgType2List( mdText ), myDoc = ""
         For i=2 To mdList.Length()-1
-            myDoc = myDoc & HTMLParce( mdList[i], mdList[i-1], mdList[i+1] ) & "\n"
+            myDoc = myDoc & HTMLParce( mdList[i], mdList[i-1], mdList[i+1], ANSI ) & "\n"
         End For
     Return myDoc
 End Function
@@ -126,7 +130,7 @@ Function abMD2HTMLStyledDoc( mdText, Title = "" )
 End Function
 
 
-Function HTMLParce( Text, PTxt, NTxt )
+Function HTMLParce( Text, PTxt, NTxt, ANSI )
     Static fBQ = False, fCB1 = False, fCB2 = False, fUL = False, fULs = False, fOL = False, fT = False
     Dim Out = Text
 
@@ -164,21 +168,21 @@ Function HTMLParce( Text, PTxt, NTxt )
     End If
 
   ' Titles
-    If LeftTrim( Text, 1 ) = "#"      And Text[2] <> "#" Then Return "<h1>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h1>"
-    If LeftTrim( Text, 2 ) = "##"     And Text[3] <> "#" Then Return "<h2>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h2>"
-    If LeftTrim( Text, 3 ) = "###"    And Text[4] <> "#" Then Return "<h3>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h3>"
-    If LeftTrim( Text, 4 ) = "####"   And Text[5] <> "#" Then Return "<h4>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h4>"
-    If LeftTrim( Text, 5 ) = "#####"  And Text[6] <> "#" Then Return "<h5>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h5>"
-    If LeftTrim( Text, 6 ) = "######" And Text[7] <> "#" Then Return "<h6>" & HTMLStyle( Trim( Replace( Out, "#", "" ))) & "</h6>"
-    If LeftTrim( NTxt, 3 ) = "===" Then Return "<h1>" & HTMLStyle( Trim( Out )) & "</h1>"
+    If LeftTrim( Text, 1 ) = "#"      And Text[2] <> "#" Then Return "<h1>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h1>"
+    If LeftTrim( Text, 2 ) = "##"     And Text[3] <> "#" Then Return "<h2>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h2>"
+    If LeftTrim( Text, 3 ) = "###"    And Text[4] <> "#" Then Return "<h3>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h3>"
+    If LeftTrim( Text, 4 ) = "####"   And Text[5] <> "#" Then Return "<h4>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h4>"
+    If LeftTrim( Text, 5 ) = "#####"  And Text[6] <> "#" Then Return "<h5>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h5>"
+    If LeftTrim( Text, 6 ) = "######" And Text[7] <> "#" Then Return "<h6>" & HTMLStyle( Trim( Replace( Out, "#", "" )), ANSI ) & "</h6>"
+    If LeftTrim( NTxt, 3 ) = "===" Then Return "<h1>" & HTMLStyle( Trim( Out ), ANSI ) & "</h1>"
     If LeftTrim( Text, 3 ) = "===" And Trim( PTxt ) <> "" Then Return ""
-    If LeftTrim( NTxt, 3 ) = "---" Then Return "<h2>" & HTMLStyle( Trim( Out )) & "</h2>"
+    If LeftTrim( NTxt, 3 ) = "---" Then Return "<h2>" & HTMLStyle( Trim( Out ), ANSI ) & "</h2>"
     If LeftTrim( Text, 3 ) = "---" And Trim( PTxt ) <> "" Then Return ""
 
   ' Open/close table
     If LeftTrim( Text, 1 ) = "|" And Trim( PTxt ) = "" And !fT Then fT = True
     If fT And (LeftTrim( Text, 2 ) = "|-" Or LeftTrim( Text, 3 ) = "| -") Then Return "</thead>\n<tbody>"
-    If fT Then Out = "<tr><td>" & HTMLStyle(Replace( Out, "|", "</td><td>" )) & "</td></tr>"
+    If fT Then Out = "<tr><td>" & HTMLStyle(Replace( Out, "|", "</td><td>" ), ANSI ) & "</td></tr>"
     If fT And Trim( PTxt ) = "" Then Out = "<table>\n<thead>\n<tr class=\"header\">\n" & Out
     If fT And Trim( NTxt ) = "" Then : fT = False : Out &= "\n</tbody>\n</table>" : End If
 
@@ -186,7 +190,7 @@ Function HTMLParce( Text, PTxt, NTxt )
     Dim BgnBull = InStr( Text, "* " ) : If !BgnBull Then BgnBull = InStr( Text, "- " ) : If !BgnBull Then BgnBull = InStr( Text, "+ " )
     If (Text[1] = "*" Or Text[1] = "-" Or Text[1] = "+") And Text[2] = " " And Trim( PTxt ) = "" Then fUL = True
     If Text[1] = " " And (LeftTrim( Text, 1 ) = "*" Or LeftTrim( Text, 1 ) = "-" Or LeftTrim( Text, 1 ) = "+") And fUL Then fULs = True
-    If fUL Or fULs Then Out = "<li>" & HTMLStyle( LTrim( Out[BgnBull+2:Length(Out)] )) & "</li>"
+    If fUL Or fULs Then Out = "<li>" & HTMLStyle( LTrim( Out[BgnBull+2:Length(Out)] ), ANSI ) & "</li>"
     If fULs And (PTxt[1] = "*" Or PTxt[1] = "-" Or PTxt[1] = "+") Then : Return "<ul>\n" & Out
        ElseIf fULs And (NTxt[1] = "*" Or NTxt[1] = "-" Or NTxt[1] = "+") Then : fULs = False : Return Out & "\n</ul>"
        ElseIf fULs Then : Return Out : End If
@@ -197,7 +201,7 @@ Function HTMLParce( Text, PTxt, NTxt )
   ' Open/close ordered list
     Dim BgnNumb = InStr( Text, "." )
     If Text[1:2] = "1." Then fOL = True
-    If fOL Then Out = "<li>" & HTMLStyle( LTrim( Out[BgnNumb+1:Length(Out)] )) & "</li>"
+    If fOL Then Out = "<li>" & HTMLStyle( LTrim( Out[BgnNumb+1:Length(Out)] ), ANSI ) & "</li>"
     If fOL And Trim( PTxt ) = "" Then : Return "<ol>\n" & Out
        ElseIf fOL And Trim( NTxt ) = "" Then : fOL = False : Return Out & "\n</ol>"
        ElseIf fUL Then : Return Out : End If
@@ -218,25 +222,27 @@ Function HTMLParce( Text, PTxt, NTxt )
   ' Line break
     If Right( Out, 2 ) = "  " Then Out = RTrim( Out ) & "<br>"
 
-    Return HTMLStyle( Out )
+    Return HTMLStyle( Out, ANSI )
 End Function
 
 
-Function HTMLStyle( Text )
+Function HTMLStyle( Text, ANSI )
     Static fB = False, fI = False, fIB= False, fS = False, fC = False, fH = False, fU = False, fD = False
     Const MaxRepl = 20
     Dim Out = Text
 
-  ' UTF-8 to ANSI
-    Dim Tbl = [ Chr(226)&Chr(130)&Chr(172), Chr(226)&Chr(130)&Chr(172), Chr(226)&Chr(128)&Chr(156), Chr(198)&Chr(146), Chr(226)&Chr(128)&Chr(158),
-    Chr(226)&Chr(128)&Chr(166), Chr(226)&Chr(128)&Chr(160), Chr(226)&Chr(128)&Chr(161), Chr(203)&Chr(134), Chr(226)&Chr(128)&Chr(176), Chr(197)&Chr(160),
-    Chr(226)&Chr(128)&Chr(185), Chr(197)&Chr(146), Chr(197)&Chr(146), Chr(197)&Chr(189), Chr(197)&Chr(189), Chr(197)&Chr(189), Chr(226)&Chr(128)&Chr(152),
-    Chr(226)&Chr(128)&Chr(153), Chr(226)&Chr(128)&Chr(156), Chr(226)&Chr(128)&Chr(157), Chr(226)&Chr(128)&Chr(162), Chr(226)&Chr(128)&Chr(147),
-    Chr(226)&Chr(128)&Chr(148), Chr(203)&Chr(156), Chr(226)&Chr(132)&Chr(162), Chr(197)&Chr(161), Chr(226)&Chr(128)&Chr(186), Chr(197)&Chr(147),
-    Chr(197)&Chr(147), Chr(197)&Chr(190), Chr(197)&Chr(184)]
-    For i=128 To 159 : Out = Replace( Out, Tbl[i-127], Chr(i) ) : End For
-    For i=161 To 191 : Out = Replace( Out, Chr(194)&Chr(i), Chr(i) ) : End For
-    For i=192 To 255 : Out = Replace( Out, Chr(195)&Chr(i-64), Chr(i) ) : End For
+    ' UTF-8 to ANSI
+    If ANSI Then
+        Dim Tbl = [ Chr(226)&Chr(130)&Chr(172), Chr(226)&Chr(130)&Chr(172), Chr(226)&Chr(128)&Chr(156), Chr(198)&Chr(146), Chr(226)&Chr(128)&Chr(158),
+                    Chr(226)&Chr(128)&Chr(166), Chr(226)&Chr(128)&Chr(160), Chr(226)&Chr(128)&Chr(161), Chr(203)&Chr(134), Chr(226)&Chr(128)&Chr(176), Chr(197)&Chr(160),
+                    Chr(226)&Chr(128)&Chr(185), Chr(197)&Chr(146), Chr(197)&Chr(146), Chr(197)&Chr(189), Chr(197)&Chr(189), Chr(197)&Chr(189), Chr(226)&Chr(128)&Chr(152),
+                    Chr(226)&Chr(128)&Chr(153), Chr(226)&Chr(128)&Chr(156), Chr(226)&Chr(128)&Chr(157), Chr(226)&Chr(128)&Chr(162), Chr(226)&Chr(128)&Chr(147),
+                    Chr(226)&Chr(128)&Chr(148), Chr(203)&Chr(156), Chr(226)&Chr(132)&Chr(162), Chr(197)&Chr(161), Chr(226)&Chr(128)&Chr(186), Chr(197)&Chr(147),
+                    Chr(197)&Chr(147), Chr(197)&Chr(190), Chr(197)&Chr(184)]
+        For i=128 To 159 : Out = Replace( Out, Tbl[i-127], Chr(i) ) : End For
+        For i=161 To 191 : Out = Replace( Out, Chr(194)&Chr(i), Chr(i) ) : End For
+        For i=192 To 255 : Out = Replace( Out, Chr(195)&Chr(i-64), Chr(i) ) : End For
+    End If
 
   ' Markdown escape characteres
     Out = Replace( Out, "\\-", "&#45;" )  :  Out = Replace( Out, "\\`", "&#96;" )  :  Out = Replace( Out, "\\*", "&#42;" )
@@ -854,6 +860,7 @@ Function GetMDCode( Content )
    Dim MDContent = [], ContentLine, MinSpac = 100, Spac
    For I = 1 To Content.Length()
        ContentLine = LTrim( Content[i] )
+       If (I>=1 And I<=3) And (ContentLine[1:2] = "#!" Or ContentLine = "") Then Continue
        If ContentLine[1] = "'" Then  :         ContentLine = ContentLine[2:Len(ContentLine)]
        ElseIf ContentLine[1:2] = "//" Then  :  ContentLine = ContentLine[3:Len(ContentLine)]
        Else  :  Exit For
@@ -877,6 +884,12 @@ Function GetVersion()
         ver = Mid(WXBASIC_VERSION, ini, fin)
         ver = Replace(ver, ".0.", ".00.")
     Return Replace(ver, ".0", ".")
+End Function
+
+
+Function IsWindows()
+    Return LCase(Right(Command(1), 4)) = ".exe" OR
+           LCase(Right(Command(2), 4)) = ".exe"
 End Function
 
 
@@ -920,10 +933,10 @@ Function Help()
        "",
        "## Characters Encodings",
        "",
-       "The characters of MD text can be encoded, preferably, as:",
+       "The characters of Markdown text can be encoded, preferably, as:",
        "",
-       "* *Windows-1252* encoding (aka *ANSI* code page)",
        "* *UTF-8* encoding",
+       "* *Windows-1252* encoding (aka *ANSI* code page)",
        "",
        "**NOTE:** Although UTF-8 encoding allows the representation of more than 143,000 Unicode characters, ",
        "only the 256 corresponding to ANSI encoding are supported here.",
@@ -932,12 +945,6 @@ Function Help()
        "",
        "* *ISO-8859-1* (aka *Latin 1*)",
        "* *ISO-8859-15* (aka *Latin 9*)",
-       "",
-       "**Example:**",
-       "",
-       "ANSI encoding:  Á É Í Ó Ú Ü Ñ á é í ó ú ü ñ ¡ ¿  ",
-       "UTF-8 encoding: Á É Í Ó Ú Ü Ñ á é í ó ú ü ñ ¡ ¿  ",
-       "",
        "",
        "## Escaping Characters",
        "",
@@ -966,7 +973,6 @@ Function Help()
        "* ` \\\\\\^ ` 	Caret",
        "* ` \\\\\\~ ` 	Tilde",
        "",
-       "",
        "## Bold",
        "",
        "To bold text, add *two asterisks* (\\*\\*) or *two underscores* (\\_\\_) before and after a word or phrase. To bold the middle of a word for emphasis, add *two asterisks without spaces* around the letters.",
@@ -974,9 +980,9 @@ Function Help()
        "**Example:**",
        "",
        "```",
-       "  I just love **bold text**.",
-       "  I just love __bold text__.",
-       "  IJust**LoveBold**Text.",
+       "   I just love **bold text**.",
+       "   I just love __bold text__.",
+       "   IJust**LoveBold**Text.",
        "```",
        "",
        "**Result:**",
@@ -985,24 +991,21 @@ Function Help()
        "I just love __bold text__.   ",
        "IJust**LoveBold**Text.",
        "",
-       "",
        "## Italic",
        "",
        "To italicize text, add *one asterisk* (\\*) or *one underscore* (\\_) before and after a word or phrase. To italicize the middle of a word for emphasis, add *one asterisk without spaces* around the letters.",
        "",
        "**Example:**",
        "",
-       "```",
-       "  Italicized text is the *cat´s meow*.",
-       "  Italicized text is the _cat´s meow_.",
-       "  Italicized*TextIsThe*Cat´sMeow.",
-       "```",
+       "      Italicized text is the *cat's meow*.",
+       "      Italicized text is the _cat's meow_.",
+       "      Italicized*TextIsThe*Cat'sMeow.",
        "",
        "**Result:**",
        "",
        "Italicized text is the *cat's meow*.  ",
        "Italicized text is the _cat's meow_.  ",
-       "Italicized*TextIsThe*Cat&#39;sMeow.",
+       "Italicized*TextIsThe*Cat'sMeow.",
        "",
        "",
        "## Bold and Italic",
@@ -1012,13 +1015,13 @@ Function Help()
        "**Example:**",
        "",
        "```",
-       "  Text ***really important***.",
-       "  Text ___really important___.",
-       "  Text __*really important*__.",
-       "  Text **_really important_**.",
-       "  Text *__really important__*.",
-       "  Text _**really important**_.",
-       "  Text***Really***Important.",
+       "   Text ***really important***.",
+       "   Text ___really important___.",
+       "   Text __*really important*__.",
+       "   Text **_really important_**.",
+       "   Text *__really important__*.",
+       "   Text _**really important**_.",
+       "   Text***Really***Important.",
        "```",
        "",
        "**Result:**",
@@ -1031,7 +1034,6 @@ Function Help()
        "Text _**really important**_.   ",
        "Text***Really***Important.",
        "",
-       "",
        "## Code",
        "",
        "To denote a word or phrase as code, enclose it in *backticks* (\\`).",
@@ -1039,13 +1041,12 @@ Function Help()
        "**Example:**",
        "",
        "```",
-       "  At the command prompt, type: `ATTRIB -R -H *.* /S/D`",
+       "   At the command prompt, type: `ATTRIB -R -H *.* /S/D`",
        "```",
        "",
        "**Result:**",
        "",
        "At the command prompt, type: `ATTRIB -R -H \\*.\\* /S/D`",
-       "",
        "",
        "## Highlight",
        "",
@@ -1054,13 +1055,12 @@ Function Help()
        "**Example:**",
        "",
        "```",
-       "  I need to highlight these ==very important words==.",
+       "   I need to highlight these ==very important words==.",
        "```",
        "",
        "**Result:**",
        "",
        "I need to highlight these ==very important words==.",
-       "",
        "",
        "## Subscript",
        "",
@@ -1285,7 +1285,6 @@ Function Help()
        "| Paragraph | `Text`      |",
        "| Body      | Close       |",
        "",
-       "",
        "## Code Blocks",
        "",
        "To create code blocks, ident every line of the block by at least four spaces or one tab.",
@@ -1303,7 +1302,6 @@ Function Help()
        "    COPY /V /Y /B image.jpeg d:\\",
        "    DIR /L /C /X d:\\",
        "    DEL /F /Q image.jpeg",
-       "",
        "",
        "## Fenced Code Blocks",
        "",
@@ -1341,7 +1339,6 @@ Function Help()
        "  End If	 ",
        "```",
        "",
-       "",
        "## Comments",
        "",
        "To add a comment, place text *inside brackets* followed by a *colon, a space, and a pound sign* (e.g., `[comment]:&nbsp;#`).",
@@ -1350,11 +1347,11 @@ Function Help()
        "**Example:**",
        "",
        "```",
-       "    Here´s a paragraph that will be visible. ",
+       "    Here`s a paragraph that will be visible. ",
        "",
        "    [This is a comment that will be hidden.]:&nbsp;# ",
        "",
-       "    And here´s another paragraph that´s visible. ",
+       "    And here`s another paragraph that`s visible. ",
        "```",
        "	",
        "**Result:**",
@@ -1364,7 +1361,6 @@ Function Help()
        "[This is a comment that will be hidden.]: # ",
        "",
        "And here's another paragraph that's visible.",
-       "",
        "",
        "_________________________________________________",
        "",
@@ -1419,3 +1415,5 @@ Return {
     "  ............................  "
     }
 End Function
+
+
