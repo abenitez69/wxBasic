@@ -4,7 +4,9 @@ Option Explicit
 
 Dim MDContent = [], fileHandle, fileName = Command(3)
 
-If fileName <> "" Then
+If wxPathOnly( fileName ) = "" Then fileName = wxGetCwd() & DELIMITER_CHAR & Command(3)
+
+If wxFileExists( fileName ) Then
     Dim FileContent = []
     fileHandle = fOpen( fileName, "r" )
         While Not EoF( fileHandle )
@@ -23,7 +25,7 @@ Const wxID_HTML = wxNewId(),  wxID_RTF = wxNewId()
 Dim myFrame = New wxFrame( Nothing, -1, "", wxPoint( 100, 100 ), wxSize( 800, 600 ) ),
        myHTML = New wxHtmlWindow( myFrame, -1, wxPoint( -1, -1 ), wxSize( -1, -1 ) ),
        myPopupMenu = New wxMenu()
-       myHTML.SetPage( abMD2HTML( MDContent, IsWindows()))
+       myHTML.SetPage( wxBasicSyntaxHighlight( abMD2HTML( MDContent, IsWindows())))
        //myHTML.SetPage( abMD2HTMLDoc( MDContent ))
 
 
@@ -47,7 +49,7 @@ Connect( myHTML, wxEVT_RIGHT_DOWN, "ContextMenu" )
 Sub onMenuSelected( event )
    Select Case event.GetID()
       Case wxID_EXIT   :   End
-      Case wxID_ABOUT  :   wxMessageBox( "wxBMD\nVersion 3.4\nCopyright (c) 2026 Agustin Benitez Hernandez\n\nDocumenting wxBasic code using Markdown markup language.", "About wxBMD", wxOK | wxICON_INFORMATION )
+      Case wxID_ABOUT  :   wxMessageBox( "wxBMD\nVersion 3.4\nCopyleft (c) 2026 Agustin Benitez Hernandez\n\nDocumenting wxBasic code using Markdown markup language.", "About wxBMD", wxOK | wxICON_INFORMATION )
       Case wxID_SAVEAS :   SaveAs()
    End Select
 End sub
