@@ -27,7 +27,7 @@ BMD and wxBMD
 wxBMD Syntax
 ------------
 
-&nbsp;&nbsp;&nbsp; `wxBMD <script.wxb> | <library.inc>   ` Open a wxBasic file with wxBMD parser.
+&nbsp;&nbsp;&nbsp; `wxbmd <script.wxb> | <library.inc>   ` Open a wxBasic file with wxBMD parser.
 
 BMD Markup Syntax
 -----------------
