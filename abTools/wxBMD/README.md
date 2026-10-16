@@ -22,7 +22,7 @@ BMD and wxBMD
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9745; Linux  &nbsp; &nbsp; &nbsp;  &#9745; macOS  |
 
 
-
+&#9744; &#9745; &#9746; &#11197; &#128501; &#128503; &#128505;
  
 wxBMD Syntax
 ------------
