@@ -37,6 +37,7 @@ BMD Markup Syntax
 * Any indentation to the left of the comment symbol is ignored.
 * The indentation to the right of the comment symbol is ignored, if it is the same on all lines. Additional indentation on one or more specific lines is considered part of the Markdown code (in a code blocks or a nest list).
 * The first lines containing the Shebang (`#!`) and space are ignored.
+* For extended ASCII characters, encode the script as **UTF-8**, but using only characters that are valid in Windows-1252.
 * For help with Markdown syntax, run the program without specifying any file.
 
 
