@@ -29,13 +29,14 @@ wxBMD Syntax
 
 &nbsp;&nbsp;&nbsp; `wxBMD <script.wxb> | <library.inc>   ` Open a wxBasic file with wxBMD parser.
 
-BMD Syntax
-----------
+BMD Markup Syntax
+-----------------
 
 * The BMD parser assumes that all initial lines beginning with consecutive wxBasic comments (`'` or `//`)  containing BMD documentation.
 * BMD documentation ends when the first uncommented line appears. Any subsequent content is ignored by the parser.
 * Any indentation to the left of the comment symbol is ignored.
 * The indentation to the right of the comment symbol is ignored, if it is the same on all lines. Additional indentation on one or more specific lines is considered part of the Markdown code (in a code blocks or a nest list).
+* The first lines containing the Shebang (`#!`) and space are ignored.
 
 
 Remarks
