@@ -37,13 +37,6 @@ BMD Markup Syntax
 * Any indentation to the left of the comment symbol is ignored.
 * The indentation to the right of the comment symbol is ignored, if it is the same on all lines. Additional indentation on one or more specific lines is considered part of the Markdown code (in a code blocks or a nest list).
 * The first lines containing the Shebang (`#!`) and space are ignored.
+* For help with Markdown syntax, run the program without specifying any file.
 
-
-Remarks
--------
-
-* The `source` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted.
-* The `iconfile` is the name of the file that corresponds to the icon that will be used in the application. The icon filename is optional. If omitted, two things can happen:
-    - If an icon file exists in the same folder as `source` and with the same name, it will be used.
-    - Otherwise, the executable retains the wxBasic virtual machine default icon.
 
