@@ -40,7 +40,7 @@ BMD Markup Syntax
 * For extended ASCII characters, encode the script as **UTF-8**, but using only characters that are valid in Windows-1252.
 * For help with Markdown syntax, run the program without specifying any file.
 
-### Windows-1252 characters
+### Valid Windows-1252 characters
 
 ```
 !	"	#	$	%	&	'	(	)	*	+	,	-	.	/   
