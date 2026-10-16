@@ -6,7 +6,7 @@ BMD and wxBMD
 **BMD** is designed to be a simple, clean markup language with just enough syntax to be useful. Some of its goals are:
 
 * Easy to parse;
-* Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX, through `Save as` option on right-click menu
+* Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX (via `Save as` option on right-click menu);
 * Easy to incorporate sample code;
 * Easy to read without a BMD parser (i.e., in its source-code form);
 * Easy to write.
