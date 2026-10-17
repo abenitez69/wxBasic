@@ -1,5 +1,5 @@
-*abBase64*: Encode/Decode MIME Base64
-=======================================
+abBase64
+=========
 
 Encode to MIME Base64 and decode from MIME Base64.
 
