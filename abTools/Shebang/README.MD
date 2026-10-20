@@ -11,7 +11,7 @@ to binary the script.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **File name:**       |  "Shebang Emulator"                                          |
+| **File name:**       |  _Shebang Emulator Demo_                            |
 | **Version:**         |  2.0                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility for wxBasic                                |
@@ -71,8 +71,8 @@ Remarks
   assignment on line 5) and as a procedure (necessary to create the label).
 
 
-"Shebang" Example
------------------
+Example of "shebang" in Windows
+-------------------------------
 
 ```dosbatch
 echo="" // & @echo off
