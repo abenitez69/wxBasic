@@ -9,16 +9,6 @@ In wxBasic for Windows this first line is ignored and has no meaning.
 *Shebang emulator* is an alternative to create wxBasic executables on Windows without having 
 to binary the script.
 
-
-| Script description   | |
-|:---------------------|:----------------------------------------------------|
-| **Name:**            |  Shebang Emulator for Windows                   |
-| **Version:**         |  2.0                                                |
-| **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
-| **Category:**        |  System                                 |
-| **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9745; 2.5  &nbsp; &nbsp; &nbsp;  &#9745; 2.08  &nbsp; &nbsp; &nbsp;  &#9745; 3.2  &nbsp; &nbsp; &nbsp;  &#9745; Console  |
-| **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9744; Linux  &nbsp; &nbsp; &nbsp;  &#9744; macOS  |
-
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  BIND.BAT                                          |
