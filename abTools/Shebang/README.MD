@@ -11,7 +11,7 @@ to binary the script.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **File name:**       |  BIND.BAT                                          |
+| **File name:**       |  "Shebang Emulator"                                          |
 | **Version:**         |  2.0                                                |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility for wxBasic                                |
