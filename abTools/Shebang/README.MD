@@ -22,11 +22,7 @@ to binary the script.
 Idea
 ----
 
-The main idea is to place the wxBasic script code in a Windows batch file (*.CMD or *.BAT) 
-using meaningful BASIC codes to the batch file. These codes, common to both scripts, should 
-not produce significant changes or console output in wxBasic. Common codes should, first of all, 
-allow the Windows command interpreter to execute them with the wxBasic virtual machine. It can 
-also clear the screen, avoid echoing on the screen, jump to the end of the program, etc.
+The core concept involves embedding wxBasic script code within a Windows batch file (*.CMD or *.BAT) using BASIC instructions that are meaningful in the context of such a file. These commands—which are compatible with both types of scripts—should not cause significant alterations or generate console output from wxBasic. Crucially, they must allow the Windows command interpreter to execute them via the wxBasic virtual machine. Furthermore, they can perform tasks such as clearing the screen, suppressing the display of commands (echo), jumping to the end of the program, and so on.
 
  
 Syntax
