@@ -22,7 +22,7 @@ to binary the script.
 Idea
 ----
 
-The core concept involves embedding wxBasic script code within a Windows batch file (*.CMD or *.BAT) using BASIC instructions that are meaningful in the context of such a file. These commands—which are compatible with both types of scripts—should not cause significant alterations or generate console output from wxBasic. Crucially, they must allow the Windows command interpreter to execute them via the wxBasic virtual machine. Furthermore, they can perform tasks such as clearing the screen, suppressing the display of commands (echo), jumping to the end of the program, and so on.
+The core concept involves embedding wxBasic script code within a Windows batch file (*.CMD or *.BAT) using BASIC instructions that are meaningful in the context of such a file. These commands, which are compatible with both types of scripts, should not cause significant alterations or generate console output from wxBasic. Crucially, they must allow the Windows command interpreter to execute them via the wxBasic virtual machine. Furthermore, they can perform tasks such as clearing the screen, suppressing the display of commands (echo), jumping to the end of the program, and so on.
 
  
 Syntax
