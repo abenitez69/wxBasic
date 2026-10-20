@@ -22,7 +22,7 @@ BMD and wxBMD
 | **wxBasic UI:** |  &#9744; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9744; CLI & wxWidgets   |
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
 
-
+**wxBMD** is a parser, written in wxBasic by Agustin Benitez, for viewing BMD code and exporting it to other text formats.
  
 wxBMD Syntax
 ------------
