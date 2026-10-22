@@ -1,7 +1,7 @@
 BMD and wxBMD
 ================
 
-*Basic Markdown Documentation* (**BMD**) is a lightweight markup language, created by Agustin Benitez, which is used to document the wxBasic programming language, modules, and programs; using Markdown markup language.
+*Basic Markdown Documentation* (**BMD**) is a lightweight markup language, created by Agustin Benitez. It is used to document the wxBasic programming language, modules, and programs; using Markdown markup language.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
