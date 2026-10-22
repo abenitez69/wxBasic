@@ -3,15 +3,6 @@ BMD and wxBMD
 
 *Basic Markdown Documentation* (**BMD**) is a lightweight markup language, created by Agustin Benitez, which is used to document the wxBasic programming language, modules, and programs; using Markdown markup language.
 
-**BMD** is designed to be a simple, clean markup language with just enough syntax to be useful. Some of its goals are:
-
-* Easy to parse;
-* Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX (via `Save as` option on right-click menu);
-* Easy to incorporate sample code;
-* Easy to read without a BMD parser (i.e., in its source-code form);
-* Easy to write.
-
-
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  wxBMD.wxb                                          |
@@ -21,6 +12,15 @@ BMD and wxBMD
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
 | **wxBasic UI:** |  &#9744; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9744; CLI & wxWidgets   |
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
+
+
+**BMD** is designed to be a simple, clean markup language with just enough syntax to be useful. Some of its goals are:
+
+* Easy to parse;
+* Easy to convert to other formats, such as Markdown, HTML, Rich Text Format (RTF), or LaTeX (via `Save as` option on right-click menu);
+* Easy to incorporate sample code;
+* Easy to read without a BMD parser (i.e., in its source-code form);
+* Easy to write.
 
 **wxBMD** is a parser, written in wxBasic by Agustin Benitez, for viewing BMD code and exporting it to other text formats.
  
