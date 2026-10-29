@@ -3,6 +3,17 @@ abNativeOut
 
 Encodes strings from UTF-8 to the native encoding of the operating system or user interface.
 
+| Script description   | |
+|:---------------------|:----------------------------------------------------|
+| **File name:**       |  abNativeOut.inc                                          |
+| **Version:**         |  5.8                                                |
+| **Type:**            |  &#9673; Functions  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Script |
+| **Category:**        |  String                |
+| **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
+| **wxBasic UI:** |  &#9746; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9746; CLI & wxWidgets   |
+| **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
+| **Developer:**       | Agustín Benítez Hernández |
+
 ## Problem
 
 Text output containing extended ASCII characters is encoded in different formats depending on the operating system and user interface on which the wxBasic virtual machine is running:
