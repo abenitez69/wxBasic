@@ -1,0 +1,22 @@
+#!/usr/bin/wxbasic
+
+Option Explicit
+
+///////////   SAMPLE CODE   \\\\\\\\\\\\\\
+
+Include "abNativeOut.inc"
+
+Print abNativeOut( " • Multilingual:" )
+Print abNativeOut( "\tEspañol:\tÁÉÍÓÚÜÑ áéíóúüñ ¿¡" )
+Print abNativeOut( "\tDeutsch:\tÄÖÜ äöü ß" )
+Print abNativeOut( "\tFrançais:\tÀÂÆÉÈÊËÎÏÔÙÛÜÇ àâæéèêëîïôùûüÿç" )
+Print abNativeOut( "\tSvenska:\tÅÄÖ åäö" )
+Print abNativeOut( "\tNorsk/Dansk:\tÆØÅ æøå" )
+Print abNativeOut( "\tÍslenska:\tÁÐÉÍÓÚÝÞÆÖ áðéíóúýþæö" )
+Print
+Print abNativeOut( " • Currency:\t $ € ¥ £ ƒ ¢ ¤" )
+Print abNativeOut( " • Mathemat:\t ±+-·×:÷ ¼ ½ ¾ ° ¹ ² ³ ƒ Ø" )
+Print abNativeOut( " • Ordinal:\t ª º" )
+Print abNativeOut( " • Grapheme:\t ¶ (paragraph) § (section) † (footnote)" )
+
+Dim x : If abOutIsConsole() Then Input x
