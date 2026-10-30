@@ -14,7 +14,7 @@ Encodes strings from UTF-8 to the native encoding of the operating system or use
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
 | **Developer:**       | Agustín Benítez Hernández |
 
-&#9737; &#9711; &#9675; &#9673; &#8857; &#10687; &#10752;
+&#9737; &#9711; &#9675; &#9673; &#8857; &#10687; &#10752; &#9711; &#5857;
 
 ## Problem
 
