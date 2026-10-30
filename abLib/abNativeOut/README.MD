@@ -7,12 +7,12 @@ Encodes strings from UTF-8 to the native encoding of the operating system or use
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  abNativeOut.inc                                          |
 | **Version:**         |  5.8                                                |
+| **Developer:**       | Agustín Benítez Hernández |
 | **Type:**            |  &#9673; Functions  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Script |
 | **Category:**        |  String                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
 | **wxBasic UI:** |  &#9746; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9746; CLI & wxWidgets   |
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
-| **Developer:**       | Agustín Benítez Hernández |
 
 &#9737; &#9711; &#9675; &#9673; &#8857; &#10687; &#10752; &#9711;
 
