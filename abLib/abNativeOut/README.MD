@@ -14,8 +14,6 @@ Encodes strings from UTF-8 to the native encoding of the operating system or use
 | **wxBasic UI:** |  &#9746; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9746; CLI & wxWidgets   |
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
 
-&#9737; &#9711; &#9675; &#9673; &#8857; &#10687; &#10752; &#9711;
-
 ## Problem
 
 Text output containing extended ASCII characters is encoded in different formats depending on the operating system and user interface on which the wxBasic virtual machine is running:
