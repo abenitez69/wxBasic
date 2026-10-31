@@ -31,8 +31,23 @@ That limits the development of cross-platform applications.
 Always encode the script as UTF-8, but using only characters that are valid in Windows-1252. Then use the `abNativeOut` function to translate outputs into the operating system's native encoding.
 
 ## Syntax
+
 ```python
 StrNativeOut = abNativeOut( StrUTF8In )
 ```
 
+```python
+#!/usr/bin/wxBasic
+
+Option Explicit
+
+Include "abNativeOut.inc"
+
+Print abNativeOut( "Español:\tÁÉÍÓÚÜÑ áéíóúüñ ¿¡" )
+Print abNativeOut( "Deutsch:\tÄÖÜ äöü ß" )
+Print abNativeOut( "Français:\tÀÂÆÉÈÊËÎÏÔÙÛÜÇ àâæéèêëîïôùûüÿç" )
+Print abNativeOut( "Svenska:\tÅÄÖ åäö" )
+Print abNativeOut( "Norsk/Dansk:\tÆØÅ æøå" )
+Print abNativeOut( "Íslenska:\tÁÐÉÍÓÚÝÞÆÖ áðéíóúýþæö" )
+```
 
