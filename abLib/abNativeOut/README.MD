@@ -23,6 +23,7 @@ Text output containing extended ASCII characters is encoded in different formats
 * MS Windows CLI: **Code Page 850** (aka DOS Latin 1)
 
 If a character that is incorrectly encoded in Windows is output, the resulting text is unreadable. On the other hand, if an attempt is made to output a non-UTF8 character on Linux/UNIX, the virtual machine produces a critical error.
+That limits the development of cross-platform applications.
 
 
 ## Troubleshooting
