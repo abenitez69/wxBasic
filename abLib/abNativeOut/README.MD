@@ -36,8 +36,10 @@ Always encode the script as UTF-8, but using only characters that are valid in W
 StrNativeOut = abNativeOut( StrUTF8In )
 ```
 
+## Example
+
 ```python
-#!/usr/bin/wxBasic
+#!/usr/bin/wxbasic
 
 Option Explicit
 
