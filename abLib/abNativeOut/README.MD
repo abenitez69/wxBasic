@@ -36,6 +36,8 @@ Always encode the script as UTF-8, but using only characters that are valid in W
 StrNativeOut = abNativeOut( StrUTF8In )
 ```
 
+* `StrUTF8In  ` As input, a text string encoded as UTF-8
+
 ## Example
 
 ```python
