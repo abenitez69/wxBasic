@@ -1,6 +1,8 @@
 Bind for Windows
 ================
 
+Allows you to create the binary file for Windows, including the icon for the new application.
+
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  BIND.BAT                                          |
