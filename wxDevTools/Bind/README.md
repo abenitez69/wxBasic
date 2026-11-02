@@ -22,9 +22,9 @@ It is common practice, when creating executables for Windows, to assign a specif
 
 <sup>1</sup> <sub>There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file. The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.</sub>
 
-## Tr
+## Troubleshooting
 
-The **bind.bat** script allows you to create the binary file for Windows, including the icon for the new application.
+The **bind.bat** script allows you to create the binary file for Windows, including the custom icon for the new application.
 
 Syntax
 ------
