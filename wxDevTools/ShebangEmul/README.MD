@@ -13,6 +13,7 @@ to binary the script.
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  _Shebang Emulator Demo_                            |
 | **Version:**         |  2.0                                                |
+| **Developer:**       |  Agustín Benítez Hernández                          |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility for wxBasic                                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
