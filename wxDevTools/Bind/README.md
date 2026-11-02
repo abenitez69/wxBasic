@@ -1,24 +1,23 @@
 Bind for Windows
 ================
 
-The **bind.wxb** utility was created by David Cuny from the early versions of wxBasic.
-It allows you to "compile" a wxBasic script into a binary executable file.
-There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file.
-The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
-
-It is common practice, when creating executables for Windows, to assign a specific icon to the new application. The **bind.bat** script allows you to create the binary file for Windows, including the icon for the new application.
-
-
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  BIND.BAT                                          |
 | **Version:**         |  2.0                                                |
+| **Developer:**       |  Agustín Benítez Hernández                          |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility for wxBasic                                |
 | **wxBasic version:** |  &#9746; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
 | **wxBasic UI:** |  &#9746; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9746; CLI & wxWidgets   |
 | **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9744; Linux  &nbsp; &nbsp; &nbsp;  &#9744; macOS  |
 
+The **bind.wxb** utility was created by David Cuny from the early versions of wxBasic.
+It allows you to "compile" a wxBasic script into a binary executable file.
+There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file.
+The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
+
+It is common practice, when creating executables for Windows, to assign a specific icon to the new application. The **bind.bat** script allows you to create the binary file for Windows, including the icon for the new application.
  
 Syntax
 ------
