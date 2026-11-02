@@ -17,11 +17,11 @@ Allows for the creation of binary executable files for Windows with custom icons
 ## Problem
 
 The **bind.wxb** utility was created by David Cuny from the early versions of wxBasic.
-It allows you to "compile"^1^ a wxBasic script into a binary executable file.
-There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file.
-The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
+It allows you to "compile"<sup>1</sup> a wxBasic script into a binary executable file.
 
 It is common practice, when creating executables for Windows, to assign a specific icon to the new application. The **bind.bat** script allows you to create the binary file for Windows, including the icon for the new application.
+
+<sup>1</sup> There is no actual compilation; the source script is simply linked to the wxBasic virtual machine executable, resulting in a binary file. The "compilation" can be cross-platform, meaning that executables can be created from Windows for Linux and vice versa.
  
 Syntax
 ------
