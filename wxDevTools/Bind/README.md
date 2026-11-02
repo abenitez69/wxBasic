@@ -1,7 +1,7 @@
 Bind for Windows
 ================
 
-Allows you to create the binary file for Windows, including the icon for the new application.
+Allows for the creation of binary executable files for Windows with custom icons.
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
