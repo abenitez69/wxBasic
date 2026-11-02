@@ -7,6 +7,7 @@ BMD and wxBMD
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  wxBMD.wxb                                          |
 | **Version:**         |  3.4                                                |
+| **Developer:**       |  Agustín Benítez Hernández                          |
 | **Type:**            |  &#9675; Function  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9673; Script |
 | **Category:**        |  Utility for wxBasic                                |
 | **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
