@@ -3,7 +3,7 @@ abNativeOut
 
 Encodes strings from UTF-8 to the native encoding of the operating system or user interface.
 
-| Script description   | |
+| Library description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  abNativeOut.inc                                          |
 | **Version:**         |  5.8                                                |
