@@ -4,7 +4,7 @@ abBase64
 Encode to MIME Base64 and decode from MIME Base64.
 
 
-| Script description   | |
+| Library description   | |
 |:---------------------|:----------------------------------------------------|
 | **File name:**       |  abBase64.inc                                          |
 | **Version:**         |  2.0                                                |
