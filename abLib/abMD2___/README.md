@@ -18,8 +18,10 @@ Parse from Markdown and convert to HTML, LaTeX and/or Rich Text Format (RTF).
 
 | Script description   | |
 |:---------------------|:----------------------------------------------------|
-| **File name:**       |  abNativeOut.inc                                          |
-| **Version:**         |  5.8                                                |
+| **Files name:**      |  **abMD2HTML.inc**                                  |
+|                      |  **abMD2RTF.inc**                                   |
+|                      |  **abMD2TEX.inc**                                   |           
+| **Version:**         |  3.2                                                |
 | **Developer:**       | Agustín Benítez Hernández |
 | **Type:**            |  &#9673; Functions  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Script |
 | **Category:**        |  String                |
