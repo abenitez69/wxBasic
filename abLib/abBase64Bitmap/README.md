@@ -21,8 +21,7 @@ In small (single-file) projects, it is convenient to include the images within t
 Syntax
 ------
 
-* `abBase64Bitmap( ImageBase64 )   `    Constructor to creates a bitmap from a Base64 text.
-
+* `abBase64Bitmap( ImageBase64 )   `    Constructor that creates a bitmap from a Base64-encoded string.
 
 Remark
 ------
