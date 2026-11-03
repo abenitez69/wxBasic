@@ -27,7 +27,7 @@ This peculiarity of wxBasic limits the development of multilingual cross-platfor
 
 ## Troubleshooting
 
-Always encode the script as UTF-8, but using only characters that are valid in Windows-1252 character encoding. Then use the `abNativeOut` function to translate outputs into the operating system's native encoding.
+Always encode the script as **UTF-8**, but using only characters that are valid in **Windows-1252** character encoding. Then use the `abNativeOut` function to translate outputs into the operating system's native encoding.
 
 ## Syntax
 
