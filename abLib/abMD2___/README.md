@@ -1,8 +1,7 @@
 abMDParser
 =============
 
-Parse Markdown text and convert to HTML, LaTeX and/or Rich Text Format (RTF) documents.
-
+Parses Markdown text and converts it to HTML, LaTeX and/or rich text format (RTF) documents.
 
 
 | Script description   | |
