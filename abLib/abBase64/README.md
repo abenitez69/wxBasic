@@ -1,7 +1,7 @@
 abBase64
 =========
 
-Encode to MIME Base64 and decode from MIME Base64.
+Encode to and decode from **MIME Base64**.
 
 
 | Library description   | |
@@ -27,7 +27,7 @@ Remark
 ------
 
 * `ByteList`    is a list of binary bytes; 
-* `TextBase64`  is a string coded as Base64;
+* `TextBase64`  is a Base64-encoded string.
 
 The string Base64 Data Encodings according to the encoding proposed in 
 [RFC 3548](https://www.rfc-editor.org/rfc/rfc3548) and [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648):
