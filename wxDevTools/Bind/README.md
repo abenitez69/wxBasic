@@ -29,7 +29,7 @@ The **bind.bat** script allows you to create the binary file for Windows, includ
 Syntax
 ------
 
-```
+```dosbatch
 bind <source.wxb> [<iconfile.ico>]
 ```
 
