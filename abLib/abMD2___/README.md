@@ -16,6 +16,17 @@ Parse from Markdown and convert to HTML, LaTeX and/or Rich Text Format (RTF).
 | **OS:**              |  &#9745; Windows  &nbsp; &nbsp; &nbsp;  &#9745; Linux  &nbsp; &nbsp; &nbsp;  &#9745; macOS  |
 
 
+| Script description   | |
+|:---------------------|:----------------------------------------------------|
+| **File name:**       |  abNativeOut.inc                                          |
+| **Version:**         |  5.8                                                |
+| **Developer:**       | Agustín Benítez Hernández |
+| **Type:**            |  &#9673; Functions  &nbsp; &nbsp; &nbsp;  &#9675; Class  &nbsp; &nbsp; &nbsp;  &#9675; Script |
+| **Category:**        |  String                |
+| **wxBasic version:** |  &#9744; 0.6  &nbsp; &nbsp; &nbsp;  &#9746; 2.5  &nbsp; &nbsp; &nbsp;  &#9746; 2.08  &nbsp; &nbsp; &nbsp;  &#9746; 3.2  |
+| **wxBasic UI:** |  &#9746; CLI  &nbsp; &nbsp; &nbsp;  &#9746; GUI  &nbsp; &nbsp; &nbsp;  &#9746; CLI & wxWidgets   |
+| **OS:**              |  &#9746; Windows  &nbsp; &nbsp; &nbsp;  &#9746; Linux  &nbsp; &nbsp; &nbsp;  &#9746; macOS  |
+
  
 Syntax
 ------
