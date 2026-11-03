@@ -21,7 +21,7 @@ Parses Markdown text and converts it to HTML, LaTeX and/or rich text format (RTF
 Syntax
 ------
 
-Convert only the Markdown text an return:
+Convert only the Markdown text and return:
 
 * `abMD2HTML( MD )        `    to HTML.
 * `abMD2TEX( MD )         `    to LaTeX.
