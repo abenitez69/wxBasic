@@ -1,7 +1,7 @@
-abMD2Parser
+abMDParser
 =============
 
-Parse from Markdown and convert to HTML, LaTeX and/or Rich Text Format (RTF).
+Parse Markdown text and convert to HTML, LaTeX and/or Rich Text Format (RTF) documents.
 
 
 
