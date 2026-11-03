@@ -23,7 +23,7 @@ Syntax
 * `ByteList = abBase64Decode( TextBase64 )    `    Returns a binary byte list from a string coded as Base64.
 
 
-Remark
+Remarks
 ------
 
 * `ByteList`    is a list of binary bytes; 
