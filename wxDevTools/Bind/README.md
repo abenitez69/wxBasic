@@ -29,16 +29,18 @@ The **bind.bat** script allows you to create the binary file for Windows, includ
 Syntax
 ------
 
-&nbsp;&nbsp;&nbsp; `bind <source.wxb> [<iconfile.ico>]    ` Create a binary for Windows, including the icon.
+```
+bind <source.wxb> [<iconfile.ico>]
+```
 
 
 
 Remarks
 -------
 
-* The `source` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted.
-* The `iconfile` is the name of the file that corresponds to the icon that will be used in the application. The icon filename is optional. If omitted, two things can happen:
-    - If an icon file exists in the same folder as `source` and with the same name, it will be used.
+* The `source.wxb` is a name of file corresponds to the wxBasic script to be "compiled". The extension can be omitted.
+* The `iconfile.ico` is the name of the file that corresponds to the icon that will be used in the application. The icon filename is optional. If omitted, two things can happen:
+    - If an icon file exists in the same folder as `source.wxb` and with the same name, it will be used.
     - Otherwise, the executable retains the wxBasic virtual machine default icon.
 
 NOTE:
